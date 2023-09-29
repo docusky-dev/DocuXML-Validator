@@ -1,0 +1,205 @@
+﻿<!--<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+
+<body>
+    <script>
+        var result = parser.validate(xmlData);
+        if (result !== true) cnosole.log(result.err);
+        var jsonObj = parser.parse(xmlData);
+    </script>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fast-xml-parser/4.0.12/fxparser.js"
+        integrity="sha512-53HyVymh+n8HTeZ6ND4oQ+yWHxupmItxAybc5lesv8CsPvyjRijNy8fOCw3Lg/IVv7OTDkIjGRwa78Jv2EQT/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var openFile = function (event) {
+            var input = event.target;
+
+            var reader = new FileReader();
+            reader.onload = function () {
+                var text = reader.result;
+                var node = document.getElementById('output');
+                var em_node = document.getElementById('error-message');
+                node.textContent = "";
+                em_node.textContent = "";
+                const parser = fxparser.XMLValidator;
+                var result = parser.validate(text);
+                if (result !== true) {
+                    alert("xml語法錯誤");
+                    em_node.textContent = ("在第" + result.err.line + "行有以下錯誤：\r\n" + result.err.msg + "\r\n請修正。");
+                    let lines = text.split('\n');
+                    node.textContent = ("第" + result.err.line + "行內容如下：\r\n" + lines[parseInt(result.err.line) - 1]);
+                }
+                else {
+
+                    var DOMparser = new DOMParser();
+                    var xmlDoc = DOMparser.parseFromString(text, 'text/xml');
+                    var tags = xmlDoc.querySelectorAll("*");
+                    console.log(tags);
+
+                    // ThdlPrototypeExport
+                    if (tags[0].tagName != 'ThdlPrototypeExport')
+                        alert_and_exit("缺少<ThdlPrototypeExport>或未放在root位置上");
+
+                    // documents
+                    var documents = xmlDoc.querySelectorAll("documents");
+                    if (documents.length != 1)
+                        alert_and_exit("<documents>數量必須恰好為1")
+                    if (documents[0].parentNode.tagName != "ThdlPrototypeExport")
+                        alert("<documents>必須是<ThdlPrototypeExport>的child");
+
+                    // document
+                    var all_document = xmlDoc.querySelectorAll("document");
+                    if (all_document.length == 0)
+                        alert("必須至少有一<document>");
+                    for (tag of all_document)
+                        if (tag.parentNode.tagName != "documents")
+                            alert("<document>必須是<documents>的child");
+
+
+
+                    var filenameSet = new Set();
+
+                    for (tag of all_document) {
+                        // filename
+                        filename = tag.attributes["filename"];
+                        if (typeof filename === 'undefined')
+                            alert_and_exit("所有<document>都必須有 'filename' 這個 attribute");
+                        if (filenameSet.has(filename.nodeValue))
+                            alert_and_exit("每個<document>的 'filename' 內容必須唯一");
+                        else
+                            filenameSet.add(filename.nodeValue);
+
+                        // corpus
+                        var n_corpus = 0;
+                        var n_doc_content = 0;
+                        for (child of tag.childNodes) {
+                            if (child.tagName == "corpus")
+                                n_corpus++;
+                            if (child.tagName == "doc_content")
+                                n_doc_content++;
+                        }
+                        if (n_corpus != 1)
+                            alert_and_exit("每個<document>都必須恰好有一<corpus>")
+                        if (n_doc_content != 1)
+                            alert_and_exit("每個<document>都必須恰好有一<doc_content>")
+
+                        // doc_content
+                        var doc_content = tag.querySelectorAll("doc_content");
+                        // alert(doc_content[0]);
+
+                    }
+                    alert("目前無檢查到錯誤");
+                }
+                console.log(reader.result.substring(0, 1000));
+            };
+            reader.readAsText(input.files[0]);
+            document.getElementById("File").value = "";
+        };
+        function Fileupload(e) {
+            var reader = new FileReader();
+            reader.readAsText(e.files[0]);
+            reader.onload = function (e) {
+                readXML = e.target.result.replace(/></g, ">\n<");
+                var parser = new DOMParser();
+                var xml = parser.parseFromString(readXML, 'text/xml');
+                validate(xml);
+            }
+        }
+
+        function validate(xml) {
+            XML_is_valid(xml);
+            var tags = xml.querySelectorAll("*");
+            console.log(tags);
+            necessary_tags(xml, tags);
+            document_necessary_tags(xml, tags);
+
+            function document_necessary_tags(xml, tags) {
+                var document = xml.querySelectorAll("document");
+                var filenameSet = new Set();
+
+                for (tag of document) {
+                    // filename
+                    filename = tag.attributes["filename"];
+                    if (typeof filename === 'undefined')
+                        alert_and_exit("<document>下必須有 'filename' 這個attribute");
+                    if (filenameSet.has(filename.nodeValue))
+                        alert_and_exit("<document>下的 'filename' 必須唯一");
+                    else
+                        filenameSet.add(filename.nodeValue);
+
+                    // corpus
+                    var n_corpus = 0;
+                    var n_doc_content = 0;
+                    for (child of tag.childNodes) {
+                        if (child.tagName == "corpus")
+                            n_corpus++;
+                        if (child.tagName == "doc_content")
+                            n_doc_content++;
+                    }
+                    if (n_corpus != 1)
+                        alert_and_exit("每個<document>都必須有一<corpus>")
+                    if (n_doc_content != 1)
+                        alert_and_exit("每個<document>都必須有一<doc_content>")
+                }
+            }
+
+            function necessary_tags(xml, tags) {
+                // ThdlPrototypeExport
+                if (tags[0].tagName != 'ThdlPrototypeExport')
+                    alert_and_exit("缺少<ThdlPrototypeExport>或未放在root位置上");
+
+                // documents
+                var documents = xml.querySelectorAll("documents");
+                if (documents.length != 1)
+                    alert_and_exit("<documents>數量必須為1")
+                if (documents[0].parentNode.tagName != "ThdlPrototypeExport")
+                    alert_and_exit("<documents>必須是<ThdlPrototypeExport>的child");
+
+                // document
+                var document = xml.querySelectorAll("document");
+                if (document.length == 0)
+                    alert_and_exit("必須至少有一<document>");
+                for (tag of document)
+                    if (tag.parentNode.tagName != "documents")
+                        alert_and_exit("<document>必須是<documents>的child");
+            }
+
+            function XML_is_valid(xml) {
+                if (xml.documentElement.nodeName == 'parsererror')
+                    alert_and_exit("XML語法錯誤");
+            }
+        }
+
+        function alert_and_exit(message) {
+            alert(message);
+            throw new Error(message);
+        }
+    </script>
+</head>
+
+<body>
+    <input type="file" id="File" onchange="openFile(event)">
+    <div id='error-message' style="white-space: pre-line">
+    </div>
+    <div id='output' style="white-space: pre-line">
+    </div>
+</body>
+
+</html>
