@@ -1,0 +1,1621 @@
+<?xml version="1.0"?>
+<ThdlPrototypeExport>
+    <corpus name="佛寺志人物傳記">
+        <metadata_field_settings>
+            <time_dynasty show_spotlight="Y" display_order="1">傳主朝代</time_dynasty>
+            <geo_level2 show_spotlight="Y" display_order="2">傳主籍貫</geo_level2>
+            <geo_xy show_spotlight="Y" display_order="3">傳主籍貫代表座標</geo_xy>
+            <compilation_name show_spotlight="Y" display_order="4">傳主傳記來源寺志數</compilation_name>
+            <geo_level3 show_spotlight="Y" display_order="5">傳主圓寂地</geo_level3>
+            <timeseq_not_before show_spotlight="Y" display_order="6">傳主生年</timeseq_not_before>
+            <timeseq_not_after show_spotlight="Y" display_order="7">傳主卒年</timeseq_not_after>
+           
+        </metadata_field_settings>
+        <feature_analysis>
+            <spotlight category="Person" sub_category="-" display_order="1" title="傳主名"/>
+            <spotlight category="Place" sub_category="Udef_NativePlace" display_order="2" title="傳主籍貫"/>
+            <spotlight category="Place" sub_category="Udef_DeathPlace" display_order="3" title="傳主圓寂地"/>
+           <spotlight category="Udef_MonkType" sub_category="-" display_order="4" title="傳主高僧傳分科"/>
+            <spotlight category="Udef_Cult" sub_category="-" display_order="5" title="傳主所屬宗派"/>
+            <spotlight category="Udef_DocSource" sub_category="-" display_order="6" title="傳記來源寺志"/>
+            <spotlight category="Place" sub_category="-" display_order="7" title="來源寺志描述地點"/>
+            <spotlight category="Udef_HotZone" sub_category="-" display_order="8" title="來源寺志描述區域"/>
+            <spotlight category="Person" sub_category="Udef_contentPN" display_order="9" title="傳記內提及人物"/>
+            <spotlight category="Place" sub_category="Udef_contentLN" display_order="10" title="傳記內提及地點"/>
+            <spotlight category="Udef_Docclass" sub_category="-" display_order="11" title="來源志分類樹"/>
+            <spotlight category="Udef_DocDynasty" sub_category="-" display_order="12" title="來源志朝代樹"/>
+            <spotlight category="Udef_HotZoneCattree" sub_category="-" display_order="13" title="來源志熱區樹"/>
+            <spotlight category="Udef_SourceCategoryCattree" sub_category="-" display_order="14" title="來源志類目樹"/>
+            <tag type="contentTagging" name="Udef_DocSource" default_category="Udef_DocSource" default_sub_category="-"/>
+            <tag type="contentTagging" name="Udef_MonkType" default_category="Udef_MonkType" default_sub_category="-"/>
+            <tag type="contentTagging" name="Udef_HotZone" default_category="Udef_HotZone" default_sub_category="-"/>
+            <tag type="contentTagging" name="Udef_Cult" default_category="Udef_Cult" default_sub_category="-"/>
+            <tag type="contentTagging" name="Udef_NativePlace" default_category="Place" default_sub_category="Udef_NativePlace"/>
+            <tag type="contentTagging" name="LocName" default_category="Place" default_sub_category="-"/>
+            <tag type="contentTagging" name="Udef_contentPN" default_category="Person" default_sub_category="Udef_contentPN"/>
+            <tag type="contentTagging" name="Udef_contentLN" default_category="Place" default_sub_category="Udef_contentLN"/>
+            <tag type="contentTagging" name="Udef_DeathPlace" default_category="Place" default_sub_category="Udef_DeathPlace"/>
+            <tag type="contentTagging" name="PersonName" default_category="Person" default_sub_category="-"/>
+            <tag type="contentTagging" name="Udef_Docclass" default_category="Udef_Docclass" default_sub_category="-"/>
+            <tag type="contentTagging" name="Udef_DocDynasty" default_category="Udef_DocDynasty" default_sub_category="-"/>
+            <tag type="contentTagging" name="Udef_HotZoneCattree" default_category="Udef_HotZoneCattree" default_sub_category="-"/>
+            <tag type="contentTagging" name="Udef_SourceCategoryCattree" default_category="Udef_SourceCategoryCattree" default_sub_category="-"/>
+        </feature_analysis>
+       
+        <PageParameters>
+            <CorpusTrees>
+                <CatTree Title="來源志分類樹" Spotlight="TA:Udef_Docclass/-" LeafDisplayFormat="%cue% (共 %cnt% 筆)" InternalDisplayFormat="%cue% (共 %cnt% 筆)" HideTextBeforeSymbol="否" OneToOne="false"/>
+                <CatTree Title="來源志朝代樹" Spotlight="TA:Udef_DocDynasty/-" LeafDisplayFormat="%cue% (共 %cnt% 筆)" InternalDisplayFormat="%cue% (共 %cnt% 筆)" HideTextBeforeSymbol="否" OneToOne="false"/>
+                <CatTree Title="來源志熱區樹" Spotlight="TA:Udef_HotZoneCattree/-" LeafDisplayFormat="%cue% (共 %cnt% 筆)" InternalDisplayFormat="%cue% (共 %cnt% 筆)" HideTextBeforeSymbol="否" OneToOne="false"/>
+                <CatTree Title="來源志類目樹" Spotlight="TA:Udef_SourceCategoryCattree/-" LeafDisplayFormat="%cue% (共 %cnt% 筆)" InternalDisplayFormat="%cue% (共 %cnt% 筆)" HideTextBeforeSymbol="否" OneToOne="false"/>
+            </CorpusTrees>
+        </PageParameters>
+    </corpus>
+    <corpus name="@佛寺志書目">
+        <metadata_field_settings>
+            <book_code show_spotlight="Y" display_order="1">寺志編號</book_code>
+            <doctype show_spotlight="Y" display_order="2">寺志分類</doctype>
+            <author show_spotlight="Y" display_order="3">寺志作者</author>
+            <year_for_grouping show_spotlight="Y" display_order="4">寺志著作年份</year_for_grouping>
+            <time_dynasty show_spotlight="Y" display_order="5">寺志著作朝代</time_dynasty>
+            <timeseq_not_before show_spotlight="Y" display_order="6">寺志內傳主人數</timeseq_not_before>
+            <timeseq_not_after show_spotlight="N" display_order="999">TNA</timeseq_not_after>
+            <docclass show_spotlight="Y" display_order="7">寺志描述區域</docclass>
+            <geo_xy show_spotlight="Y" display_order="8">寺志代表座標</geo_xy>
+        </metadata_field_settings>
+        <feature_analysis>
+            <spotlight category="Udef_AuthorBackground" sub_category="-" display_order="1" title="作者背景"/>
+            <tag type="contentTagging" name="Udef_AuthorBackground" default_category="Udef_AuthorBackground" default_sub_category="-"/>
+        </feature_analysis>
+    </corpus>
+    <documents>
+		
+        <document filename="A003799">
+            <corpus>佛寺志人物傳記</corpus>
+            <compilation_vol>1</compilation_vol>
+            <title>義興</title>
+            <geo_level2></geo_level2>
+            <geo_longitude>0</geo_longitude>
+            <geo_latitude>0</geo_latitude>
+            <geo_level3></geo_level3>
+            <timeseq_not_before></timeseq_not_before>
+            <timeseq_not_after></timeseq_not_after>
+            <xml_metadata>
+                <Udef_Biographs>1</Udef_Biographs>
+                <Udef_DocSource>g012天童寺志</Udef_DocSource>
+                <Udef_AlternativeNames>太白禪師</Udef_AlternativeNames>
+                <Udef_Dynasty>西晉</Udef_Dynasty>
+                <Udef_HotZone>4杭州</Udef_HotZone>
+                <Udef_Hometown></Udef_Hometown>
+                <Udef_PlaceDeceased></Udef_PlaceDeceased>
+				<Udef_SourceCategory1>g012天童寺志/天童寺志卷之三/先覺考/晉</Udef_SourceCategory1>
+                <Udef_Cult></Udef_Cult>
+            </xml_metadata>
+            <time_dynasty>西晉</time_dynasty>
+            <compilation_name>1</compilation_name>			
+
+            <doc_content>
+				<Paragraph Key="A003799_000" Type="傳主" Title="傳主"><PersonName Term="義興" RefId="dila_A003799">義興</PersonName></Paragraph>
+				
+				
+				<Paragraph Key="A003799_g012_1" Type="來源寺志" Title="來源寺志">g012<LocName Term="g012天童寺志" RefId="dila_PL000000012319" DocuSkyAuth="@BTB::{g012}" Url="http://buddhistinformatics.dila.edu.tw/fosizhi/ui.html?book=g012#">g012天童寺志</LocName>：天童寺志卷之三/先覺考/晉</Paragraph>
+<Paragraph Key="A003799_g012_1" Type="寺志內容" Title="寺志內容">前《嘉靖志》〈白川居士楊明傳〉云：師于西晉永康元年，誅茅于今寺之東谷。時有童子日給薪水，久而辭去，曰：「我太白星也，上帝感師道行，遣侍左右。」言訖不見。人遂稱為太白禪師，因以名山，蓋天童之第一祖也。其遺址則今東谷菴是，俗稱為「小天童」云。〈惢泉居士聞性道傳〉云：師以永康庚申來結茅東谷。此地雖峰高澗曲，尚未標勝，而人迹亦罕至焉。陸士龍言鄮縣風土之盛，則曰「西有大湖，北有名山，南有林澤」。此就同谷立鄮治而言，故指錢湖在西也。北有名山，其遙指今之太白育王乎！自秦時沙門室利房等至，見金人飛戶而出，始皇以為異。漢武時，霍大將軍過焉支山，得休屠王祭天金神，置之甘泉宮。二者即佛像入中國之始也。迨東漢明帝永平丁卯，其法盛入。攝摩騰、竺法蘭為領法之沙門，距義興祖師時二百三十四年，尚未分宗秉法。今之稱禪師者，誤也。是時，行僧各尋山川幽邃處靜修。厥後典午東移，多清談名理，出入彤廷朱戶，乃託買山以隱，不亦矯乎？義師不留氏里，獨栖危巒窅谷閒，誰其引之？區區薪水之役，誰其代之？惟誠則感而通，太白星之為童子，誰謂上帝相遣？太白山之歸義師，豈非本地風光，歷千秋而不沒哉？</Paragraph>
+				
+
+                <MetaTags NoIndex="0">
+					<Udef_HotZoneCattree>4杭州/g012天童寺志</Udef_HotZoneCattree>
+					<Udef_DocSource>g012天童寺志</Udef_DocSource>
+                    
+					<Udef_HotZone>4杭州</Udef_HotZone>
+					<Udef_SourceCategoryCattree>g012天童寺志/天童寺志卷之三/先覺考/晉</Udef_SourceCategoryCattree>
+					<Udef_Cult></Udef_Cult>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="A012858">
+            <corpus>佛寺志人物傳記</corpus>
+            <compilation_vol>1</compilation_vol>
+            <title>契此</title>
+            <geo_level2>明州</geo_level2>
+            <geo_longitude>121.5701</geo_longitude>
+            <geo_latitude>29.7043</geo_latitude>
+            <geo_level3></geo_level3>
+            <timeseq_not_before></timeseq_not_before>
+            <timeseq_not_after>0916</timeseq_not_after>
+            <xml_metadata>
+                <Udef_Biographs>1</Udef_Biographs>
+                <Udef_DocSource>g014明州岳林寺志</Udef_DocSource>
+                <Udef_AlternativeNames>釋契此;長汀子布袋師;布袋和尚;定應</Udef_AlternativeNames>
+                <Udef_Dynasty>唐</Udef_Dynasty>
+                <Udef_HotZone>4杭州</Udef_HotZone>
+                <Udef_Hometown>明州</Udef_Hometown>
+                <Udef_PlaceDeceased></Udef_PlaceDeceased>
+				<Udef_SourceCategory1>g014明州岳林寺志/明州岳林寺志卷三/法系/唐</Udef_SourceCategory1>
+                <Udef_Cult></Udef_Cult>
+            </xml_metadata>
+            <time_dynasty>唐</time_dynasty>
+            <compilation_name>1</compilation_name>			
+
+            <doc_content>
+				<Paragraph Key="A012858_000" Type="傳主" Title="傳主"><PersonName Term="契此" RefId="dila_A012858">契此</PersonName></Paragraph>
+				<Paragraph Key="A012858_001" Type="籍貫" Title="籍貫"><Udef_NativePlace Term="明州" PlaceRefId="dila_PL000000012470">明州</Udef_NativePlace></Paragraph>
+				
+				<Paragraph Key="A012858_g014_1" Type="來源寺志" Title="來源寺志">g014<LocName Term="g014明州岳林寺志" RefId="dila_PL000000012464" DocuSkyAuth="@BTB::{g014}">g014明州岳林寺志</LocName>：明州岳林寺志卷三/法系/唐</Paragraph>
+<Paragraph Key="A012858_g014_1" Type="寺志內容" Title="寺志內容">師不知何許人也，唐僖宗時見於明州奉化縣，蹙額皤腹、形體腲脮，日夕寢食無常處。世莫知其姓氏。每以杖荷布袋，且有十八小兒譁逐之，不知所從來。入肆聚落，見醯醢魚葅，輒乞入口，餘以投袋中。自號長汀子。曾往閩化木一袋，從寺井中出，取之不竭。岳林梵宇大興，共神異之。梁貞明三年丙子三月，師將示寂，說偈曰：彌勒真彌勒化身千百億時時示時人時人自不識偈畢，即於本寺東廊下，端坐磐石而化。結龕封山為窣堵波，賜額「定應塔」。後復現于他州，亦負布袋，眾競圖其像。有僧在師前行，師撫其背，僧回首，師曰：「乞我一文錢。」曰：「道得即與！」師放下布袋，叉手而立。白鹿和尚問：「如何是布袋？」師放下布袋。又問：「如何是布袋下事？」師負之而去。保福和尚問：「如何是佛法大意？」師放下布袋，叉手。又問：「莫更有向上事否？」師乃負之而去。師立街傍，有僧問：「和尚在這裏作甚麼？」師曰：「等個人來。」曰：「來也，來也！」師曰：「汝不是這個人。」師在閩中，有陳居士謂師曰：「和尚此去不可墮他人是非！」師曰：是非憎愛世偏多仔細思量奈我何寬却肚皮常忍辱放開笑口暗消磨若逢知己須依分縱遇冤家也共和能使此心無罣礙自然證得六波羅士曰：「和尚有法號否？」師曰：我有一布袋虛空無掛礙展開遍十方入時觀自在士曰：「有行李否？」師曰：一鉢千家飯孤身萬里遊覩人青眼在問路白雲頭士曰：「弟子愚頑，如何得見佛性？」師曰：即個心心心是佛十方世界最靈物縱橫妙用可憐生一切不如心真實士曰：「和上此去莫依族舍而住。」師曰：我有三寶堂裏空無色相不高亦不低無遮亦無障學者體不如求者難得樣智慧解安排千古無一匠四門四果生十方盡供養居士異之，復作禮，留齋宿。是夕師復書偈于門曰：吾有一軀佛世人皆不識不塑亦不裝不雕亦不刻無一滴灰泥無一點彩色工畫畫不成賊偷偷不得體相本自然清淨非拂拭雖然是一軀分身千百億僧問：「如何降伏妄心？」師曰：心是何物徒勞調伏妄本無根放下無跡諸緣擾攘一真寧寂如如法界體堂堂砍不破兮遮不黑師受田家齋，田家問道，師曰：手揑青苗種福田低頭便見水中天六根清淨方成稻退後原來是向前師在大橋夜坐，忽有强人窺探，示以偈曰：由貪淪墮世波中捨却貪嗔禮大雄直截凡情無所得圓明寂照汝心宗師出街衢，見市人擠擠，歎曰：奔南走北欲何為百歲光陰頃刻衰自性靈知須急悟莫教平地陷風雷又曰：趨利求名空自忙利名二字陷人坑疾須返照娘生面一片靈心是覺王僧問：「如何是頓漸法門？」師曰：汝心即聖智何須問次第聖凡都不到空華映日飛僧問：「如何是化導？」師曰：肩挑日月橫街去把定乾坤莫放渠遇聖遇凡俱坐斷寂光勝地可安居僧問：「如何修持則勿虛生浪死？」師曰：無生無死佛家風不墮古今莫定蹤觸處圓明常湛寂龍華雞足兩無從僧問：「如何是道？」師曰：碧水映孤峰寒潭迎皎月爾我不知宗須彌足底越</Paragraph>
+				
+
+                <MetaTags NoIndex="0">
+					<Udef_HotZoneCattree>4杭州/g014明州岳林寺志</Udef_HotZoneCattree>
+					<Udef_DocSource>g014明州岳林寺志</Udef_DocSource>
+                    <Udef_MonkType>感通</Udef_MonkType>
+					<Udef_HotZone>4杭州</Udef_HotZone>
+					<Udef_SourceCategoryCattree>g014明州岳林寺志/明州岳林寺志卷三/法系/唐</Udef_SourceCategoryCattree>
+					<Udef_Cult></Udef_Cult>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="A014352">
+            <corpus>佛寺志人物傳記</corpus>
+            <compilation_vol>1</compilation_vol>
+            <title>省常</title>
+            <geo_level2>錢塘</geo_level2>
+            <geo_longitude>120.1775</geo_longitude>
+            <geo_latitude>30.2928</geo_latitude>
+            <geo_level3>靈苑山</geo_level3>
+            <timeseq_not_before>0959</timeseq_not_before>
+            <timeseq_not_after>1020</timeseq_not_after>
+            <xml_metadata>
+                <Udef_Biographs>1</Udef_Biographs>
+                <Udef_DocSource>g015大昭慶律寺志</Udef_DocSource>
+                <Udef_AlternativeNames>圓淨常;圓淨省常;造微;昭慶圓淨;錢塘白蓮社主</Udef_AlternativeNames>
+                <Udef_Dynasty>北宋</Udef_Dynasty>
+                <Udef_HotZone>4杭州</Udef_HotZone>
+                <Udef_Hometown>錢塘</Udef_Hometown>
+                <Udef_PlaceDeceased>靈苑山</Udef_PlaceDeceased>
+				<Udef_SourceCategory1>g015大昭慶律寺志/大昭慶律寺志卷之五/淨社/十八高賢/淨行社主省常</Udef_SourceCategory1>
+                <Udef_Cult></Udef_Cult>
+            </xml_metadata>
+            <time_dynasty>北宋</time_dynasty>
+            <compilation_name>1</compilation_name>			
+
+            <doc_content>
+				<Paragraph Key="A014352_000" Type="傳主" Title="傳主"><PersonName Term="省常" RefId="dila_A014352">省常</PersonName></Paragraph>
+				<Paragraph Key="A014352_001" Type="籍貫" Title="籍貫"><Udef_NativePlace Term="錢塘" PlaceRefId="dila_PL000000011516">錢塘</Udef_NativePlace></Paragraph>
+				<Paragraph Key="A014352_002" Type="圓寂地" Title="圓寂地"><Udef_DeathPlace Term="靈苑山" PlaceRefId="dila_PL000000011567">靈苑山</Udef_DeathPlace></Paragraph>
+				<Paragraph Key="A014352_g015_1" Type="來源寺志" Title="來源寺志">g015<LocName Term="g015大昭慶律寺志" RefId="dila_PL000000011463" DocuSkyAuth="@BTB::{g015}">g015大昭慶律寺志</LocName>：大昭慶律寺志卷之五/淨社/十八高賢/淨行社主省常</Paragraph>
+<Paragraph Key="A014352_g015_1" Type="寺志內容" Title="寺志內容">孤山智圓〈錢唐昭慶寺白蓮社主碑記〉　聖宋天禧四年春正月十二日，白蓮社主圓淨大師常公，歸寂於錢唐西湖昭慶寺之上方艸堂，壽六十二，臘四十四。弟子虛白等奉全身瘞於靈隱山鳥窠禪師墳側，右建塔以識之，禮也。其年冬，持狀過我，乞為之辭，以勒豐碑，且言先人之遺旨也。吾辭不得命，乃為文而序之。粵西聖之為教也，清淨而無為，仁慈而不殺，抗辭幽說，閡意眇旨大備。諸夏稟化之徒，得其小者、近者，則遷善而遠惡；得其大者、遠者，則歸元而復性。噫！廬山遠公，其得乎大者、遠者歟！考槃居貞，修辭立誠，識足以表微，行足以作程，是故時賢仰其高，企其明，自是有結社之事焉，人到於今稱之而莫能嗣之。惟公理行謹嚴，修心貞素，聞廬山之風而悅之，且曰：「希驥之馬，亦驥之乘，吾雖無似，敢忘思齊之誡耶？」於是乎乃飭其躬，乃刳其心，乃矢結社之謀云。夫率其道必依乎地，尊其神必假乎像，行其化必憑乎言。以為西湖者，天下之勝游，乃樂幽閒而示嘉遯焉。無量壽佛者，羣生之仰止，乃刻旃檀而為之形容焉。華嚴淨行品者，成聖之機要，乃刺身血而書其章句焉。其地既得，其像既成，其言既行，朝賢高其誼，海內藉其名。由是宰衡名卿、邦伯牧長，又聞公之風而悅之，或尋幽而問道，或睹相而知真，或考經而得意。三十餘年(淳化至天禧初)預白蓮之社者，凡一百二十三人，其化成也如此。有以見西湖之社嗣於廬山者，無慚德矣。嘗試論之：遠也，上地之聖也；公也，初心之賢也；實階位不同，名聲異號。然而遠出衰晉，公生聖朝。彼招者，悉隱淪之賢；此來者，皆顯達之士。絕長益短，古今相埒，不曰盛歟、美歟？公每顧門人曰：「國初以來，薦紳先生宗古為文，大率效退之之為人，以排擠釋氏為意。故我假遠公之迹，訹以結社事，往往從我而化，而叢碑委頌，稱道佛法，以為歸向之盟辭，適足以枳棘異塗，牆壍吾教矣。世不我知，或以我為設奇沽譽者，吾非斯人之徒也。」君子曰：昔藥山惟儼能廻李翺之心，俾知佛而僧傳善之，今兹眾賢，庶幾實相欽崇大覺，朝宗於性海，共極於義天，非公之力而誰歟！其護法之功，代為不侔矣。公諱省常，字造微，姓顏氏，世為錢唐人。七歲厭俗，十七具戒。若乃托胎之祥瑞，受業之師保，傳講習禪之美，砥名礪節之事，則有社客羣賢碑序，及門人所錄行狀在焉，此不復云，直言其結社之道而已。其文曰：西聖之大維遠得之廬山之高維公悅之西湖之社羣賢慕之有始有卒不磷不淄我緣既終我滅於兹神游無何名揚聖時欲知我道視此豐碑林逋〈和梅聖俞雪中同虛白上人見訪詩〉即師之弟子虛白也，詩云：湖上翫佳雪相將唯道林早烟村意遠春漲岸痕深地僻過三徑人閑試五禽歸橈有餘興寧復比山陰《佛祖統記》云：師於淳化中住西湖昭慶，慕廬山慧遠高風，結淨行社，而王文正公為之社長，一時公卿牧伯預此社者至一百二十三人。二十餘年，蓮風普振，比邱同志，復有千眾。孤山智圓法師撰〈白蓮社主碑〉以紀盛績，翰林承旨宋白撰〈蓮社銘〉，運使孫何為之〈記〉，翰林蘇易簡作〈淨行品序〉。天禧四年正月十二日，師端坐念佛，有頃，高聲唱曰：「佛來也！」泊然而化，眾見地色皆金，移時方沒。</Paragraph>
+				
+
+                <MetaTags NoIndex="0">
+					<Udef_HotZoneCattree>4杭州/g015大昭慶律寺志</Udef_HotZoneCattree>
+					<Udef_DocSource>g015大昭慶律寺志</Udef_DocSource>
+                    
+					<Udef_HotZone>4杭州</Udef_HotZone>
+					<Udef_SourceCategoryCattree>g015大昭慶律寺志/大昭慶律寺志卷之五/淨社/十八高賢/淨行社主省常</Udef_SourceCategoryCattree>
+					<Udef_Cult></Udef_Cult>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="A001482">
+            <corpus>佛寺志人物傳記</corpus>
+            <compilation_vol>1</compilation_vol>
+            <title>龍樹</title>
+            <geo_level2>南天竺</geo_level2>
+            <geo_longitude>79</geo_longitude>
+            <geo_latitude>21</geo_latitude>
+            <geo_level3></geo_level3>
+            <timeseq_not_before></timeseq_not_before>
+            <timeseq_not_after>0250</timeseq_not_after>
+            <xml_metadata>
+                <Udef_Biographs>1</Udef_Biographs>
+                <Udef_DocSource>g017玉岑山慧因高麗華嚴教寺志</Udef_DocSource>
+                <Udef_AlternativeNames>Nāgārjuna龍勝;龍樹菩薩;那伽阿周陀那;那伽阿順那;那伽曷樹那;那伽閼剌樹那;那伽夷離淳那;龍猛菩薩;聖者龍樹</Udef_AlternativeNames>
+                <Udef_Dynasty>印度</Udef_Dynasty>
+                <Udef_HotZone>4杭州</Udef_HotZone>
+                <Udef_Hometown>南天竺</Udef_Hometown>
+                <Udef_PlaceDeceased></Udef_PlaceDeceased>
+				<Udef_SourceCategory1>g017玉岑山慧因高麗華嚴教寺志/慧因寺志卷之三/祖德</Udef_SourceCategory1>
+                <Udef_Cult></Udef_Cult>
+            </xml_metadata>
+            <time_dynasty>印度</time_dynasty>
+            <compilation_name>1</compilation_name>			
+
+            <doc_content>
+				<Paragraph Key="A001482_000" Type="傳主" Title="傳主"><PersonName Term="龍樹" RefId="dila_A001482">龍樹</PersonName></Paragraph>
+				<Paragraph Key="A001482_001" Type="籍貫" Title="籍貫"><Udef_NativePlace Term="南天竺" PlaceRefId="dila_PL000000048209">南天竺</Udef_NativePlace></Paragraph>
+				
+				<Paragraph Key="A001482_g017_1" Type="來源寺志" Title="來源寺志">g017<LocName Term="g017玉岑山慧因高麗華嚴教寺志" RefId="dila_PL000000011601" DocuSkyAuth="@BTB::{g017}">g017玉岑山慧因高麗華嚴教寺志</LocName>：慧因寺志卷之三/祖德</Paragraph>
+<Paragraph Key="A001482_g017_1" Type="寺志內容" Title="寺志內容"><Udef_contentLN Term="西天竺國" PlaceRefId="dila_PL000000055425">西天竺國</Udef_contentLN>人。受法於<Udef_contentPN Term="毘羅尊者" PersonRefId="dila_A004471">毘羅尊者</Udef_contentPN>，後至<Udef_contentLN Term="南邱印度" PlaceRefId="dila_PL000000048209">南邱印度</Udef_contentLN>國，國人多信福業。聞尊者言，悉疑佛性。遂於座現自在身，如滿月輪。眾性所法音不睹師相。時有長者<Udef_contentPN Term="迦那提婆" PersonRefId="dila_A001207">迦那提婆</Udef_contentPN>告眾曰：「此是尊者現佛性體相，以示我等。葢無相三昧，形如滿月。佛性廓然虛明，正如是耳。」輪相隨隱，復現師形。為說偈曰：「身現圓月相，以表諸佛體。法說無其形，用辨非聲色。」遂得《大智度論》、《十二門論》，以廣《中論》之旨，垂之後世。後以如來大法藏付弟子<Udef_contentPN Term="迦那提婆" PersonRefId="dila_A001207">迦那提婆</Udef_contentPN>，為說偈曰：為明隱顯法方說解脫理於法心不證無嗔亦無喜付訖，入月輪三昧，廣現神變。復就座，凝然示寂。為<Udef_contentLN Term="西域" PlaceRefId="dila_PL000000055436">西域</Udef_contentLN>第十四祖。</Paragraph>
+				
+
+                <MetaTags NoIndex="0">
+					<Udef_HotZoneCattree>4杭州/g017玉岑山慧因高麗華嚴教寺志</Udef_HotZoneCattree>
+					<Udef_DocSource>g017玉岑山慧因高麗華嚴教寺志</Udef_DocSource>
+                    
+					<Udef_HotZone>4杭州</Udef_HotZone>
+					<Udef_SourceCategoryCattree>g017玉岑山慧因高麗華嚴教寺志/慧因寺志卷之三/祖德</Udef_SourceCategoryCattree>
+					<Udef_Cult></Udef_Cult>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="A042493">
+            <corpus>佛寺志人物傳記</corpus>
+            <compilation_vol>1</compilation_vol>
+            <title>法璿</title>
+            <geo_level2></geo_level2>
+            <geo_longitude>0</geo_longitude>
+            <geo_latitude>0</geo_latitude>
+            <geo_level3></geo_level3>
+            <timeseq_not_before></timeseq_not_before>
+            <timeseq_not_after></timeseq_not_after>
+            <xml_metadata>
+                <Udef_Biographs>1</Udef_Biographs>
+                <Udef_DocSource>g012天童寺志</Udef_DocSource>
+                <Udef_AlternativeNames>太白禪師</Udef_AlternativeNames>
+                <Udef_Dynasty>唐</Udef_Dynasty>
+                <Udef_HotZone>4杭州</Udef_HotZone>
+                <Udef_Hometown></Udef_Hometown>
+                <Udef_PlaceDeceased></Udef_PlaceDeceased>
+				<Udef_SourceCategory1>g012天童寺志/天童寺志卷之三/先覺考/唐</Udef_SourceCategory1>
+                <Udef_Cult></Udef_Cult>
+            </xml_metadata>
+            <time_dynasty>唐</time_dynasty>
+            <compilation_name>1</compilation_name>			
+
+            <doc_content>
+				<Paragraph Key="A042493_000" Type="傳主" Title="傳主"><PersonName Term="法璿" RefId="dila_A042493">法璿</PersonName></Paragraph>
+				
+				
+				<Paragraph Key="A042493_g012_1" Type="來源寺志" Title="來源寺志">g012<LocName Term="g012天童寺志" RefId="dila_PL000000012319" DocuSkyAuth="@BTB::{g012}">g012天童寺志</LocName>：天童寺志卷之三/先覺考/唐</Paragraph>
+<Paragraph Key="A042493_g012_1" Type="寺志內容" Title="寺志內容">師之母，夢吉祥天女引行摩利上宮而娠。稍長，即出家。開元壬申，入太白山，披荊莽，得晉時義興祖師結茅，感太白星化童子，日給薪水之故蹟，乃建精舍於山之東麓。日誦《法華》甚虔，有天童躡雲升降，捧天食來供。山之又名「天童」因此。祕書萬齊融建多寶塔於精舍西南隅，師嘗遶塔夜行，侍者見師身與塔齊。明《永樂鈔誌》言，順陽范的嘗書碑備述其事，惜今失傳焉。</Paragraph>
+				
+
+                <MetaTags NoIndex="0">
+					<Udef_HotZoneCattree>4杭州/g012天童寺志</Udef_HotZoneCattree>
+					<Udef_DocSource>g012天童寺志</Udef_DocSource>
+                    
+					<Udef_HotZone>4杭州</Udef_HotZone>
+					<Udef_SourceCategoryCattree>g012天童寺志/天童寺志卷之三/先覺考/唐</Udef_SourceCategoryCattree>
+					<Udef_Cult></Udef_Cult>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="A000475">
+            <corpus>佛寺志人物傳記</corpus>
+            <compilation_vol>1</compilation_vol>
+            <title>宗杲   </title>
+            <geo_level2>宣州</geo_level2>
+            <geo_longitude>118.7514</geo_longitude>
+            <geo_latitude>30.9457</geo_latitude>
+            <geo_level3>明月堂</geo_level3>
+            <timeseq_not_before>1089</timeseq_not_before>
+            <timeseq_not_after>1163</timeseq_not_after>
+            <xml_metadata>
+                <Udef_Biographs>1</Udef_Biographs>
+                <Udef_DocSource>g010明州阿育王山志</Udef_DocSource>
+                <Udef_AlternativeNames>定光佛;大慧宗杲;曇晦;雲門;佛日大師;普覺禪師;杲佛日;妙喜;妙喜杲;徑山大慧;徑山杲;徑山宗杲;大惠;大慧普覺;大慧禪師;大慧杲;大慧</Udef_AlternativeNames>
+                <Udef_Dynasty>南宋</Udef_Dynasty>
+                <Udef_HotZone>4杭州</Udef_HotZone>
+                <Udef_Hometown>宣州</Udef_Hometown>
+                <Udef_PlaceDeceased>明月堂</Udef_PlaceDeceased>
+				<Udef_SourceCategory1>g010明州阿育王山志/明州阿育王山志卷八/明州阿育王山志卷第八</Udef_SourceCategory1>
+                <Udef_Cult>臨濟宗 楊岐派</Udef_Cult>
+            </xml_metadata>
+            <time_dynasty>南宋</time_dynasty>
+            <compilation_name>1</compilation_name>			
+
+            <doc_content>
+				<Paragraph Key="A000475_000" Type="傳主" Title="傳主"><PersonName Term="宗杲   " RefId="dila_A000475">宗杲   </PersonName></Paragraph>
+				<Paragraph Key="A000475_001" Type="籍貫" Title="籍貫"><Udef_NativePlace Term="宣州" PlaceRefId="dila_PL000000016952">宣州</Udef_NativePlace></Paragraph>
+				<Paragraph Key="A000475_002" Type="圓寂地" Title="圓寂地"><Udef_DeathPlace Term="明月堂" PlaceRefId="dila_PL000000011759">明月堂</Udef_DeathPlace></Paragraph>
+				<Paragraph Key="A000475_g010_1" Type="來源寺志" Title="來源寺志">g010<LocName Term="g010明州阿育王山志" RefId="dila_PL000000012309" DocuSkyAuth="@BTB::{g010}">g010明州阿育王山志</LocName>：明州阿育王山志卷八/明州阿育王山志卷第八</Paragraph>
+<Paragraph Key="A000475_g010_1" Type="寺志內容" Title="寺志內容"><Udef_contentPN Term="釋宗杲大慧禪師" PersonRefId="dila_A000475">釋宗杲大慧禪師</Udef_contentPN>，係<Udef_contentLN Term="宣州寜國縣" PlaceRefId="dila_PL000000017083">宣州寜國縣</Udef_contentLN>人，姓奚氏。其母夢神人衛一僧黑頰而隆鼻，造于臥室，問其何所居，對曰：「岳北。」覺而有娠。及誕之日，白光透室，舉邑歎異，實元祐四年己巳十一月初十日巳時。師年十六，父母知師無處俗意，指<Udef_contentLN Term="東山慧雲院" PlaceRefId="dila_PL000000017079">東山慧雲院</Udef_contentLN>禮<Udef_contentPN Term="慧齊" PersonRefId="dila_A013595">慧齊</Udef_contentPN>為師。師年十七納僧服，請具足戒于<Udef_contentLN Term="景德寺" PlaceRefId="dila_PL000000016932">景德寺</Udef_contentLN>。自尔智辨聦敏，不假師承。乃至紹興廿六年丙子，師六十八歲，正月離<Udef_contentLN Term="梅陽" PlaceRefId="dila_PL000000031333">梅陽</Udef_contentLN>，十月至<Udef_contentLN Term="寜國" PlaceRefId="dila_PL000000017082">寜國</Udef_contentLN>。適<Udef_contentLN Term="明州" PlaceRefId="dila_PL000000012198">明州</Udef_contentLN><Udef_contentLN Term="育王山寺" PlaceRefId="dila_PL000000012309">育王山寺</Udef_contentLN>使至，准朝命住持。十一月渡<Udef_contentLN Term="錢唐" PlaceRefId="dila_PL000000011512">錢唐</Udef_contentLN>，至<Udef_contentLN Term="明州光孝寺" PlaceRefId="dila_PL000000011683">明州光孝寺</Udef_contentLN>開堂，十五日入院。次年丁丑，師年六十九歲，住<Udef_contentLN Term="育王" PlaceRefId="dila_PL000000012309">育王</Udef_contentLN>，裹糧問道者萬二千指。百廢並舉，檀度向從，冠于今昔。寺以眾多食貧，常住陳請海岸閑地，僅得千頃。命工開築以為南畆，費緡錢十萬餘。師率八萬四千人結「般若會」，出緡錢以成，歲入用贍齋廚。<Udef_contentPN Term="育王" PersonRefId="dila_A002034">育王</Udef_contentPN>提唱，有《語錄》一卷。至隆興元年癸未，師年七十五歲。聞王師凱旋，作偈：「塵氛一掃蕩然空，百二山河在掌中。世出世間俱了了，當陽不昧主人公。」出衣盂，合山清眾閱《華嚴經》七百餘部，用祝聖壽、保國康民。夏，之<Udef_contentLN Term="寜國" PlaceRefId="dila_PL000000017082">寜國</Udef_contentLN>上冢葺治還，上復取向賜宸翰，以御寶識之曰「賜大慧」。七月十二日示微恙，大眾力請說法。師委曲付囑曰：「汝等各隨所緣，以佛法為念。」十四夜，有大星隕于寢室之後，師聞微笑曰：「吾將行矣。」<Udef_contentPN Term="了賢" PersonRefId="dila_A008391">了賢</Udef_contentPN>請偈，師厲聲曰：「無偈便死不得也？」請不已，偈曰：「生也只恁麼，死也只恁麼，有偈無偈是甚麼？」大投筆，吉祥而逝，乃八月初十。全身葬<Udef_contentLN Term="徑山庵" PlaceRefId="dila_PL000000011848">徑山庵</Udef_contentLN>後，賜謚「普覺」，塔名「寶光」。<Udef_contentPN Term="釋宗演" PersonRefId="dila_A008055">釋宗演</Udef_contentPN>編</Paragraph>
+				
+
+                <MetaTags NoIndex="0">
+					<Udef_HotZoneCattree>4杭州/g010明州阿育王山志</Udef_HotZoneCattree>
+					<Udef_DocSource>g010明州阿育王山志</Udef_DocSource>
+                    <Udef_MonkType>習禪</Udef_MonkType>
+					<Udef_HotZone>4杭州</Udef_HotZone>
+					<Udef_SourceCategoryCattree>g010明州阿育王山志/明州阿育王山志卷八/明州阿育王山志卷第八</Udef_SourceCategoryCattree>
+					<Udef_Cult>臨濟宗</Udef_Cult>
+<Udef_Cult>楊岐派</Udef_Cult>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="A002296">
+            <corpus>佛寺志人物傳記</corpus>
+            <compilation_vol>1</compilation_vol>
+            <title>寶誌</title>
+            <geo_level2>金城</geo_level2>
+            <geo_longitude>118.778</geo_longitude>
+            <geo_latitude>32.0514</geo_latitude>
+            <geo_level3>獨龍阜</geo_level3>
+            <timeseq_not_before>0418</timeseq_not_before>
+            <timeseq_not_after>0515</timeseq_not_after>
+            <xml_metadata>
+                <Udef_Biographs>1</Udef_Biographs>
+                <Udef_DocSource>g006金陵梵剎志</Udef_DocSource>
+                <Udef_AlternativeNames>寶公;寶志;保誌;誌公和尚;志公和尚;道林真覺;普濟聖師菩薩;廣濟大師;妙覺大師;慈應惠感大師;一際真密禪師</Udef_AlternativeNames>
+                <Udef_Dynasty>南梁</Udef_Dynasty>
+                <Udef_HotZone>3南京</Udef_HotZone>
+                <Udef_Hometown>金城</Udef_Hometown>
+                <Udef_PlaceDeceased>獨龍阜</Udef_PlaceDeceased>
+				<Udef_SourceCategory1>g006金陵梵剎志/金陵梵剎志卷三/金陵梵剎志卷三/傳</Udef_SourceCategory1>
+<Udef_SourceCategory2>g006金陵梵剎志/金陵梵剎志卷三/金陵梵剎志卷三/傳</Udef_SourceCategory2>
+                <Udef_Cult></Udef_Cult>
+            </xml_metadata>
+            <time_dynasty>南梁</time_dynasty>
+            <compilation_name>1</compilation_name>			
+
+            <doc_content>
+				<Paragraph Key="A002296_000" Type="傳主" Title="傳主"><PersonName Term="寶誌" RefId="dila_A002296">寶誌</PersonName></Paragraph>
+				<Paragraph Key="A002296_001" Type="籍貫" Title="籍貫"><Udef_NativePlace Term="金城" PlaceRefId="dila_PL000000008607">金城</Udef_NativePlace></Paragraph>
+				<Paragraph Key="A002296_002" Type="圓寂地" Title="圓寂地"><Udef_DeathPlace Term="獨龍阜" PlaceRefId="dila_PL000000008736">獨龍阜</Udef_DeathPlace></Paragraph>
+				<Paragraph Key="A002296_g006_1" Type="來源寺志" Title="來源寺志">g006<LocName Term="g006金陵梵剎志" RefId="dila_PL000000008891" DocuSkyAuth="@BTB::{g006}">g006金陵梵剎志</LocName>：金陵梵剎志卷三/金陵梵剎志卷三/傳</Paragraph>
+<Paragraph Key="A002296_g006_1" Type="寺志內容" Title="寺志內容">梁陸倕法師自說，姓朱，名保誌，其生緣桑梓莫能知之，齊故特進吳人。張緒興皇寺僧釋法義，並見法師。於宋太始初出入鍾山，往來都邑，年可五六十歲，未知其異也。齊、宋之交，稍顯靈迹，被髮徒跣，負杖挾鏡，或徵索酒肴，或數日不食，豫言未兆，懸識他心，一時之中，分身數處。天監十三年，即化於華林園之佛堂。先是忽移寺之金剛，出置戸外，語僧眾云：菩薩當去耳。後旬日無疾而殞沉舟之痛，有切皇心。殯葬資須，事豐供厚，望方墳而隕涕，瞻白帳而拊心。爰詔有司，式刋景行。辭曰：欲化毗城金粟降靈猗歟大士權迹帝京緒冑莫詳邑居罕見譬彼涌出猶如空現哀兹景像愍此風電將導舟梁假我方便形煩心寂外荒內辯觀往測來覩微知顯動足墟立發言風偃業窮難詔因謝弗援慧雲晝歇慈燈夜昏</Paragraph>
+<Paragraph Key="A002296_g006_2" Type="來源寺志" Title="來源寺志">g006<LocName Term="g006金陵梵剎志" RefId="dila_PL000000008891" DocuSkyAuth="@BTB::{g006}">g006金陵梵剎志</LocName>：金陵梵剎志卷三/金陵梵剎志卷三/傳</Paragraph>
+<Paragraph Key="A002296_g006_2" Type="寺志內容" Title="寺志內容">寺志師諱寶誌，金陵人。宋文帝元嘉十三年丙子示跡東陽市古木鷹巢中，民人朱氏婦，上巳日汲水，聞兒啼，歸報其家，梯樹得之，舉以為子，就指為姓。面方瑩徹如鏡，手足皆鳥爪。甫七歲，去依鍾山大沙門法儉為童子，儉名之曰寶誌。明帝泰始三年，丁未落髮，專修禪觀，坐必踰旬。久之，忽無完居，多往皖山劍水之下，披髮而徒跣，著錦袍飲啖，同於凡俗，常以古鏡剪刀、尺扇拄杖，負之而趍，經聚落兒，童諠逐之。或徵索酒殽，或累日不食，而無飢色。嘗從喫鱠者求鱠食，與之者心笑之，即起吐水中皆成魚。人始驚異，時題詩句，初不可曉，後皆有驗。齊建元間，異跡甚著，宰相高嵩與武帝言之以禮，自皖山迎至都，舍於陳征虜之家，輒自剺其面，分披之，出十二面，首觀世音慈嚴妙麗，傾都觀之，欲爭尊事。武帝忿其惑眾，收付建康獄，旦夕咸見遊行市里，既而檢校，猶在獄中。其夜又語吏門外有兩輿金鉢盛飯，汝可取之。果文惠太子竟陵王並送供至建康，令呂文顯啟帝迎至禁中，俄有旨屏除，後宮為家人宴公例常與出已，而見行道於景陽山比丘七輩從其後。帝怒遣使至，閽吏曰：公久在省中，吏就視之，身如塗墨然。帝聞之大驚。時僧正法獻，欲以一衣遺師，遣使於龍光、罽賓二寺求之。伯云：公昨在此，行道旦眠。未覺使還以告，方知其身分三處宿焉。公嘗盛冬袒行沙門寶亮欲以衲遺之，未及發言，忽來引衲而去。師在華林園，忽重三著三布帽，亦不知自何得之。俄而武帝崩，文惠太子豫章文獻王相繼薨齊亦於此季矣。出傳燈錄蔡仲熊嘗問：仕何所至，公不自答，直解杖頭左索繩擲與之，莫之解。仲熊果至尚書左丞永明中，住東宮，後堂平昌門中。出入末年，忽云門上血汚，衣褰走過。及鬱林見害，果以犢車載屍，自此門舍故閹人徐龍駒宅，而帝頭血流於門限焉。建武中，明帝害諸王，高上江泌憂念南康王子琳以訪公，問其禍福，公覆香爐示之曰：都盡無餘。後皆如其語。徐陵兒時，其父携詣師，師拊之曰：天上麒麟也。陵果名譽顯於世。又文惠太子迎釋僧惠至京師，遇師拊其背曰：赤龍子也。惠終，以辯才顯聞其徒。齊屯騎桑偃將欲謀反，往謁誌誌，遙見而走，大呼云：圍臺城，欲反逆砍頭破腹。後又旬事發偃叛走。朱方為人所得，果砍頭破腹陳顯，逹鎮江州。大司馬殷齊之從行，往辭，公無他語，但引紙畫鴉，畢之曰：緩急可用此顯逹叛，齊之遁去。顯逹大怒，遣騎追之，將及，齊之窘甚，見鴉喧暮林，即匿其下，鴉翔集自如騎玩，失其踪，但見鴉林，必非人所寄，遂去。齊之，方悟師意。鄱陽忠烈王飯於私第，顧左右覓荊杖，有折以獻者，則以安門上而去。俄有旨以領荊州衛尉胡諧卧病請師。師註疏云：明屈明日竟不往，是日諧亡。載屍還宅，公明日屍出也。師多去來，興皇凈名兩寺，齊帝常禁師出入。及梁武，帝即位，下詔曰：寶公迹均塵垢，神遊冥寂，水火不能焦濡，蛇虎不能侵懼。語其佛理，則聲聞以上，談其隱倫，則遁仙高者。豈得以俗士常情，空相拘制？何其鄙狹一至於此！自今已後，隨意出入，勿得復禁。自是多出入禁內。天監五年秋，季旱，雩祭備至，而雨未降。帝請雲光法師於華光殿講勝鬘經，師索水貯凈器，安刀其上，以祝須臾，雲行雨施，高下皆足。出行狀帝始用刑慘酷師現六神通力，令見高祖於地下受極苦相之狀，繇是息刀鋸之害。天監六年，帝假師神力，見地獄苦，問：何以救之？師曰：夙世定業，不可頓滅，唯聞鐘聲，其苦蹔息。帝於是詔天下寺院擊鐘，當舒徐其聲，欲以停其苦也。出釋氏編年錄師嘗於臺城對武帝喫鱠昭明諸王子皆侍側，帝曰：朕不知其味，二十餘年師何爾？師乃吐出小魚，依依鱗尾。帝深異之，如今秣陵，尚有鱠殘魚是也。出漫錄帝嘗問師曰：弟子煩惑未除，何以治之？師索十二識者，以為十二因緣治惑藥也。又問十二之旨，師曰：在書字時節刻漏中，識者以為書之，在十二時中。又問：弟子何以得凈心修習？答曰：安樂禁識者以為禁者止也。至安樂時，乃止爾。出行狀舒州濳山最奇絕，而山麓尤勝，師與白鶴道，人皆欲之。天監六年，二人俱白。武帝以二人皆具靈通，俾各以物識者，其地得居之。道人云：某以鶴止處為記。師曰：某以卓錫處為記。已而鶴先飛去，至麓將止，忽聞空中錫飛聲師之錫，遂卓於山麓，而鶴驚止他所，道人不懌，然以前言不可食，遂各以識築室焉。出萬花谷集杜詩云錫飛常近鶴一日，雲光法師於華林殿講法華經至，假使黑風吹其船舫，忽問：風之有無否？雲光曰：世說故有，第一義則無也。師往復三四番，師笑曰：若體是假有，此亦不可解也。其辭止隱沒類皆如此。雲光法師講經，天雨之華，帝謂其證聖夜於含光殿焚疏請師，與雲光僧儉，傅大士齋，翌日，獨雲光不至，其優劣可見也。一日，與帝臨江縱望，有一木浮江泝流而上。帝與師及士庶觀之，師舉錫一招，其木隨至岸，乃旃檀也，詔供奉官。俞紹雕公像，既克而肖，神像如生，但少鬢髮。師拔髮挿像兩鬢，髮即隨長。宋志云：舊像，父老相傳以沉香為之，國初取歸京師。陳軒金陵集載狄咸遊蔣山詩云，旃檀歸像魏，窣堵卧煙霞，蓋謂此。帝大悅，命置中庭，為子孫世世之福田。有僧浮盃者，謁帝，帝與客方棋令殺之棋罷，命僧見侍衛，奏曰：蒙旨殺之矣。帝嗟悼不已，因問師，師曰：陛下前身蚯蚓也，因薙草誤殺之，今償夙債耳。出釋通鑑帝先問張僧繇傳師真容輒不竟，不能就繇稽首告師，師以爪劃破面門，現十二面觀音云。毘婆尸佛早留心，直至如今不得妙。出傳燈錄中後魏胡后嘗問國祚，師曰：把棗與鷄喫，朱朱蓋爾朱也。武帝一日詔師至闕，師忽顰蹙，低頭興嘆。帝問之，師曰：仇敵生也。帝罔措蓋。是年，侯景生于鮮卑懷朔鎮，即東昏侯後身也。帝嘗與師登鍾山定林寺，師指前岡獨龍阜曰：地為陰宅，則永其後。帝曰：誰當得之？公曰：先行者當得之。行狀梁皇問師：朕欲設齋布施，廣度僧尼，法門混雜。師曰：刻木為羅漢，敬之則福生；銅鐵鑄觀音，毁之則禍至。泥龍不能行雨，求雨須用泥龍，但知供餋泥龍，必有真龍降雨。凡僧不能長福，求福須用凡僧，但知供餋凡僧，必有真僧降福。出如如居士語錄帝妃郗氏崩後數月忽現一蟒上殿，為人語啟帝曰：蟒即郗氏也。妾以生存嫉妬六宮，其性慘毒，怒一發，則火熾，矢射損物害人死以是罪謫為蟒耳無飲食，實口無窟，穴可庇身飢窘困迫，力不自勝。又鱗甲則有多蟲，唼嚙肌肉，痛苦甚劇，若加錐刀，焉感帝平？昔眷愛妾之厚矣，故托醜形，陳露於帝，祈一功德以拯拔也。蟒遂不見。明日大集，沙門宣其由，問善之最以贖其苦。寶公對曰：非禮佛懺滌悃款不可。帝然其言，撰懺文共成十卷，為其懺禮。又一日，聞宮內異香馥郁，帝仰視，見一天人容儀端麗，謂帝曰：蟒後身也。蒙功德以得生忉利天，呈身致謝。言訖不見。出梁皇懺序并南史集中會稽臨海寺有僧大德，常聞揚州都下有誌公語言顛狂，放縱自在。僧云：必是狐狸之魅也，願向都下覓獵。犬以逐之。於是輕船入海，趨浦口欲西上，忽大風所飄，意謂東南六七日始到一島中，望見金裝浮圖于雲秀出，遂徑而往至一寺。院宇精麗，花卉芳菲，有五六僧皆可。年三十，美容色並著真緋袈裟倚杖於門樹下言語僧云：欲向都下為風飄蕩，不知上人此處是何州國？今四望環海，恐本鄉不可復見。答曰：必欲向揚州。即時便到，令附書到鍾山寺西行，南頭第二房，覓黄頭付之，僧因閉目坐船，風聲定，開眼如言。奄至西岸，入浦數十里。至都，徑往鍾山寺訪問，都無字黄頭，者僧具說，委曲報云：西行南頭第二房乃風病道人。誌公雖言配在此寺，常在都下聚樂處，百日不一度來，房空無人也。問答之間，不覺誌公已在寺廚上，乘醉索食，人以齋過日晚未與，間便奮身惡罵。寺僧試遣沙彌繞廚側漫叫黄頭，誌公忽曰：阿誰喚我？即逐沙彌來到僧處，謂曰：汝許將獵狗捉我，何為空來？僧知是非常人，頂禮懺悔，授書與之。誌公看書云：方丈道人喚我，不久當亦自還。誌公遂屈指云：某月日去。便不復共此僧語，眾但記某月日期去也。武帝夢神僧告曰：六道四生受大苦惱，何不為作水陸大齋而救拔之？帝問寶公，公勸云：尋經必有因緣。乃取藏經，躬自披覽，剏造義文，三年乃成。於夜捧文停燭白佛：若此文理協，聖凡願起，此燈自明，或儀式未詳，燈暗如初。言訖投地，一禮初起，燈燭盡明，至是二月十五日於金山寺是也。出葦江集云一日，帝與誌公論及樂事，請帝出死，囚數人以驗其說。既而命囚，各持滿水，周行庭下，戒曰：杯水不溢，當貸汝死。繼命作樂以動其心，良久視之，無一滴者。帝乃嘆曰：汝聞樂乎？曰：不聞。師曰：彼正畏死，惟恐水溢，安得聞樂？陛下若亦如此，常懷畏懼，則逸樂之心自然不生。出感應篇一日，寶公與帝云：欲往高座主之。帝允即往，嘗同五百大士，俱有雲光，坐山巔說法，天花墜焉。天監十三年，公移華林園金像置所居房，帝問師曰：師將去我耶？又問：國祚有留難否？公但指喉示之。厥後侯景之亂，尤追繹公言也。帝復詢社稷，存亡遠近之事。公曰：貧僧塔壞，陛下社稷隨壞。於十二月，忽聞奏絲竹，聲徹晝夜。至初六日，無疾脫化於興皇寺。屍骸香軟，形貌怡悅，正應鍾山寺，與僧先日之期也。臨亡燃一燭以付後閣，舍人吳慶以聞，帝帝歎曰：大師不復留矣，燭者以後事囑我乎？念公之言，以金二十萬易其地，敇造木塔五級，用皇女永康公主遺下，奩具成之，仍以無價寶珠置其上。塔前建開善精舍，敇陸倕製銘於塜內。王筠製碑於寺門，處處得其遺像焉。畢工駕御寺，公忽現雲端，萬眾歡呼，聲振山谷，敇謚廣濟大師。厥後帝思前言木塔其能久乎？遂命徹之，改創石塔，貴圖不朽，以應其讖。拆塔纔畢，侯景之兵果至李氏有國日謚曰妙覺。周廣順中，江南伏龜山圮，埋白石，函二尺廣八寸。中有銘云：維天監十四年秋八月，寶公埋於此山。當時名臣陸倕、王筠、姚察而下，皆莫曉其義。問之曰：在五百年後方應詞曰：若問江南事江南自有憑乘鷄登寶位犬吠入金陵子建司南斗安仁秉夜燈東隣家道闕隨虎遇明君楊文公談苑紀寶公銅碑記云：讖未來事云：有一真人，名知遠，開口張弓在左邊，子子孫孫萬萬年。吳越錢鏐有國王孫弘俶歸宋封淮海國王俶弟儀信並觀察使俶四子並節度使及族屬俱授官有差世顯不絕公顯跡之，著可數五六十許貌亦不老，莫測其年，有徐揵道者，年九十三，自言是公外舅弟小公四歲，其年九十七矣。公作四柱記、寶公符、十二時歌、十四科頌、大乘讚、禪宗法語、公鏡圖數千言傳於世。俱備大藏傳燈錄中宋太宗太平興國七年，舒州民柯蕚遇老僧率詣萬歲。山取寶，以杖指松下令掘之。得石上有篆文，乃師所記。運祚興廢之數，朝廷寶之，賜謚道林。真覺宋敏，求東京記。太平興國七年，師降見城市詔避諱稱寶，公遣使致青詞，就鍾山建道塲，賜太平興國禪寺，為顯真宗。大中祥符五年，詔於龍圖閣，取太平興國年中，舒州所獲寶公石以示輔臣，上作詩紀其事。又作贊目曰：神告帝統石，謚曰真覺大師。遣知制誥陳堯咨詣蔣山致告，仍令天下無得斥公名。又真宗實錄：大中祥符六年六月甲申，詔加謚寶公為道林。真覺大師。高宗紹興辛巳歲，金人犯淮甸，師以神力幽贊，卒使虜酋就殄江淮，以安被旨，加封道林。真覺慈應惠感大師，塔曰感順。元文宗天曆二年，封普濟聖師菩薩。</Paragraph>
+				
+
+                <MetaTags NoIndex="0">
+					<Udef_HotZoneCattree>3南京/g006金陵梵剎志</Udef_HotZoneCattree>
+					<Udef_DocSource>g006金陵梵剎志</Udef_DocSource>
+                    <Udef_MonkType>神異</Udef_MonkType>
+					<Udef_HotZone>3南京</Udef_HotZone>
+					<Udef_SourceCategoryCattree>g006金陵梵剎志/金陵梵剎志卷三/金陵梵剎志卷三/傳</Udef_SourceCategoryCattree>
+<Udef_SourceCategoryCattree>g006金陵梵剎志/金陵梵剎志卷三/金陵梵剎志卷三/傳</Udef_SourceCategoryCattree>
+					<Udef_Cult></Udef_Cult>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="A003245">
+            <corpus>佛寺志人物傳記</corpus>
+            <compilation_vol>1</compilation_vol>
+            <title>陶潛</title>
+            <geo_level2>尋陽郡</geo_level2>
+            <geo_longitude>115.8958</geo_longitude>
+            <geo_latitude>29.676</geo_latitude>
+            <geo_level3></geo_level3>
+            <timeseq_not_before>0365</timeseq_not_before>
+            <timeseq_not_after>0427</timeseq_not_after>
+            <xml_metadata>
+                <Udef_Biographs>1</Udef_Biographs>
+                <Udef_DocSource>g007武林梵志</Udef_DocSource>
+                <Udef_AlternativeNames>陶淵明;陶元亮;陶彭澤;五柳先生;靖節先生;羲皇上人;陶深明;陶泉明;陶翁</Udef_AlternativeNames>
+                <Udef_Dynasty>東晉</Udef_Dynasty>
+                <Udef_HotZone>4杭州</Udef_HotZone>
+                <Udef_Hometown>尋陽郡</Udef_Hometown>
+                <Udef_PlaceDeceased></Udef_PlaceDeceased>
+				<Udef_SourceCategory1>g007武林梵志/宰官護持</Udef_SourceCategory1>
+                <Udef_Cult></Udef_Cult>
+            </xml_metadata>
+            <time_dynasty>東晉</time_dynasty>
+            <compilation_name>1</compilation_name>			
+
+            <doc_content>
+				<Paragraph Key="A003245_000" Type="傳主" Title="傳主"><PersonName Term="陶潛" RefId="dila_A003245">陶潛</PersonName></Paragraph>
+				<Paragraph Key="A003245_001" Type="籍貫" Title="籍貫"><Udef_NativePlace Term="尋陽郡" PlaceRefId="dila_PL000000018863">尋陽郡</Udef_NativePlace></Paragraph>
+				
+				<Paragraph Key="A003245_g007_1" Type="來源寺志" Title="來源寺志">g007<LocName Term="g007武林梵志" RefId="dila_PL000000011508" DocuSkyAuth="@BTB::{g007}">g007武林梵志</LocName>：宰官護持</Paragraph>
+<Paragraph Key="A003245_g007_1" Type="寺志內容" Title="寺志內容">陶潛，字淵明，一字元亮為彭澤令之官。八十日，即解印去賦，歸去來辭。及宋，受禪居柴桑門前，植五株柳，因以五柳自號焉。閒靜寡言，不慕榮利，好讀書，不求甚解，開卷有得，便欣然忘食。見樹木交蔭，時鳥變聲亦復欣然有喜，常往來廬山天目間，使一門生二兒舁以行。時遠公為西方之社，以書招淵明。淵明曰：若許我飲。即往許之，遂造焉。嘗著搜神記，多載佛之靈驗，有天目詩。</Paragraph>
+				
+
+                <MetaTags NoIndex="0">
+					<Udef_HotZoneCattree>4杭州/g007武林梵志</Udef_HotZoneCattree>
+					<Udef_DocSource>g007武林梵志</Udef_DocSource>
+                    
+					<Udef_HotZone>4杭州</Udef_HotZone>
+					<Udef_SourceCategoryCattree>g007武林梵志/宰官護持</Udef_SourceCategoryCattree>
+					<Udef_Cult></Udef_Cult>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="A036833">
+            <corpus>佛寺志人物傳記</corpus>
+            <compilation_vol>1</compilation_vol>
+            <title>慧達</title>
+            <geo_level2>離石</geo_level2>
+            <geo_longitude>111.1446</geo_longitude>
+            <geo_latitude>37.5097</geo_latitude>
+            <geo_level3></geo_level3>
+            <timeseq_not_before>0345</timeseq_not_before>
+            <timeseq_not_after>0436</timeseq_not_after>
+            <xml_metadata>
+                <Udef_Biographs>1</Udef_Biographs>
+                <Udef_DocSource>g010明州阿育王山志</Udef_DocSource>
+                <Udef_AlternativeNames>劉薩阿;劉薩河;竺慧達;劉窣和;劉師佛;劉薩訶;劉薩何;劉慧達;劉窣和;法達;利賓菩薩</Udef_AlternativeNames>
+                <Udef_Dynasty>東晉;南北朝</Udef_Dynasty>
+                <Udef_HotZone>4杭州</Udef_HotZone>
+                <Udef_Hometown>離石</Udef_Hometown>
+                <Udef_PlaceDeceased></Udef_PlaceDeceased>
+				<Udef_SourceCategory1>g010明州阿育王山志/明州阿育王山志卷八/明州阿育王山志卷第八</Udef_SourceCategory1>
+                <Udef_Cult></Udef_Cult>
+            </xml_metadata>
+            <time_dynasty>東晉;南北朝</time_dynasty>
+            <compilation_name>1</compilation_name>			
+
+            <doc_content>
+				<Paragraph Key="A036833_000" Type="傳主" Title="傳主"><PersonName Term="慧達" RefId="dila_A036833">慧達</PersonName></Paragraph>
+				<Paragraph Key="A036833_001" Type="籍貫" Title="籍貫"><Udef_NativePlace Term="離石" PlaceRefId="dila_PL000000006017">離石</Udef_NativePlace></Paragraph>
+				
+				<Paragraph Key="A036833_g010_1" Type="來源寺志" Title="來源寺志">g010<LocName Term="g010明州阿育王山志" RefId="dila_PL000000012309" DocuSkyAuth="@BTB::{g010}">g010明州阿育王山志</LocName>：明州阿育王山志卷八/明州阿育王山志卷第八</Paragraph>
+<Paragraph Key="A036833_g010_1" Type="寺志內容" Title="寺志內容"><Udef_contentPN Term="竺慧逹" PersonRefId="dila_A036833">竺慧逹</Udef_contentPN>，姓劉，本名<Udef_contentPN Term="薩訶" PersonRefId="dila_A036833">薩訶</Udef_contentPN>，<Udef_contentLN Term="并州" PlaceRefId="dila_PL000000003810">并州</Udef_contentLN><Udef_contentLN Term="西河" PlaceRefId="dila_PL000000006027">西河</Udef_contentLN><Udef_contentLN Term="離石" PlaceRefId="dila_PL000000006015">離石</Udef_contentLN>人。少好畋獵，年三十一，忽如暫死。經日還穌，備見地獄苦報。見一道人，云是其前世師。為其說法訓誨，令出家，往<Udef_contentLN Term="丹陽" PlaceRefId="dila_PL000000008883">丹陽</Udef_contentLN>、<Udef_contentLN Term="會稽" PlaceRefId="dila_PL000000013244">會稽</Udef_contentLN>、<Udef_contentLN Term="吳郡" PlaceRefId="dila_PL000000009934">吳郡</Udef_contentLN>，覓阿育王塔像，禮拜悔過，以懴先罪。既醒，即出家學道，改名<Udef_contentPN Term="慧逹" PersonRefId="dila_A036833">慧逹</Udef_contentPN>。精勤福業，唯以禮懴為先。晉寜康中，至<Udef_contentLN Term="京師" PlaceRefId="dila_PL000000008976">京師</Udef_contentLN>。先是，<Udef_contentPN Term="簡文皇帝" PersonRefId="dila_A005213">簡文皇帝</Udef_contentPN>於<Udef_contentLN Term="長干寺" PlaceRefId="dila_PL000000008825">長干寺</Udef_contentLN>造三層塔，塔成之後每夕放光。<Udef_contentPN Term="逹" PersonRefId="dila_A036833">逹</Udef_contentPN>上越城顧望，見此剎杪獨有異色，便徃拜敬。晨夕懇到，夜見剎下時有光出，乃告人共掘。掘入丈許，得三石碑。中央碑覆中有一鐵函，函中又有銀函，銀函裡金函，金函裡有三舍利。又有一爪甲及一髪（髪伸長數尺，卷則成螺），光色炫燿。乃<Udef_contentPN Term="周宣王" PersonRefId="dila_A013592">周宣王</Udef_contentPN>時<Udef_contentPN Term="阿育王" PersonRefId="dila_A002034">阿育王</Udef_contentPN>起八萬四千墖，即此一也。既道俗歎異，乃於舊塔之西更豎一剎，施安舍利。晉太元十六年，<Udef_contentPN Term="孝武" PersonRefId="dila_A002681">孝武</Udef_contentPN>更加為三層。又昔咸和中，<Udef_contentLN Term="丹陽" PlaceRefId="dila_PL000000008883">丹陽</Udef_contentLN>尹<Udef_contentPN Term="高悝" PersonRefId="dila_A003426">高悝</Udef_contentPN>，於<Udef_contentLN Term="張侯橋" PlaceRefId="dila_PL000000008610">張侯橋</Udef_contentLN>浦裡掘得一金像，無有光趺，而製作甚工。前有梵書，云是<Udef_contentPN Term="育王" PersonRefId="dila_A002034">育王</Udef_contentPN>第四女所造。<Udef_contentPN Term="悝" PersonRefId="dila_A003426">悝</Udef_contentPN>載像還至<Udef_contentLN Term="長干巷" PlaceRefId="dila_PL000000008611">長干巷</Udef_contentLN>口，牛不復行，非人力所御。乃任牛所之，徑趣<Udef_contentLN Term="長干寺" PlaceRefId="dila_PL000000008825">長干寺</Udef_contentLN>。爾後一年許，有<Udef_contentLN Term="臨海" PlaceRefId="dila_PL000000014905">臨海</Udef_contentLN>漁人<Udef_contentPN Term="張係世" PersonRefId="dila_A003427">張係世</Udef_contentPN>，於海口得銅蓮華趺浮在水上，即收送縣。縣表上臺，勑使安像足下，契然相應。後有<Udef_contentLN Term="西域" PlaceRefId="dila_PL000000055436">西域</Udef_contentLN>五僧詣<Udef_contentPN Term="悝" PersonRefId="dila_A003426">悝</Udef_contentPN>云：「昔於<Udef_contentLN Term="天竺" PlaceRefId="dila_PL000000048207">天竺</Udef_contentLN>得<Udef_contentPN Term="阿育王" PersonRefId="dila_A002034">阿育王</Udef_contentPN>像，至<Udef_contentLN Term="鄴" PlaceRefId="dila_PL000000008976">鄴</Udef_contentLN>遭亂，藏置河邊。王路既通，尋覓失所。近得夢，云像已出江東，為<Udef_contentPN Term="高悝" PersonRefId="dila_A003426">高悝</Udef_contentPN>所得；故遠涉山海，欲一見禮拜耳。」<Udef_contentPN Term="悝" PersonRefId="dila_A003426">悝</Udef_contentPN>即引至<Udef_contentLN Term="長干" PlaceRefId="dila_PL000000008825">長干</Udef_contentLN>。五人見像，歔欷涕泣；像即放光，照于堂內。五人云：「本有圓光，今在遠處，亦尋當至。」晉咸安元年，<Udef_contentLN Term="交州合浦縣" PlaceRefId="dila_PL000000032755">交州合浦縣</Udef_contentLN>採珠人<Udef_contentPN Term="董宗之" PersonRefId="dila_A003428">董宗之</Udef_contentPN>，於海底得一佛光，刺史表上。<Udef_contentPN Term="晉簡文帝" PersonRefId="dila_A002777">晉簡文帝</Udef_contentPN>勅施此像，孔穴懸同，光色一種，凡四十餘年。東西祥感，光趺方具。<Udef_contentPN Term="逹" PersonRefId="dila_A036833">逹</Udef_contentPN>以剎像靈異，倍加翹勵。後東遊<Udef_contentLN Term="吳縣" PlaceRefId="dila_PL000000009990">吳縣</Udef_contentLN>，禮拜石像。此像以西晉將末、建興元年癸酉之歲，浮在<Udef_contentLN Term="吳松江" PlaceRefId="dila_PL000000008560">吳松江</Udef_contentLN><Udef_contentLN Term="滬瀆" PlaceRefId="dila_PL000000008505">滬瀆</Udef_contentLN>口。漁人疑為海神，延巫祝以迎之。於是風濤俱盛，駭懼而還。時有奉<Udef_contentPN Term="黃" PersonRefId="dila_A004009">黃</Udef_contentPN><Udef_contentPN Term="老" PersonRefId="dila_A002104">老</Udef_contentPN>者，謂是天師之神，復共徃接，飄浪如初。後有奉佛居士<Udef_contentLN Term="吳縣" PlaceRefId="dila_PL000000009990">吳縣</Udef_contentLN>民<Udef_contentPN Term="朱應" PersonRefId="dila_A003429">朱應</Udef_contentPN>，聞而歎曰：「將非大覺之垂應乎？」乃潔齋共<Udef_contentLN Term="東靈寺" PlaceRefId="dila_PL000000055046">東靈寺</Udef_contentLN>帛尼及信者數人到<Udef_contentLN Term="滬瀆" PlaceRefId="dila_PL000000008505">滬瀆</Udef_contentLN>口，稽首盡虔，歌唄至德，即風潮調靜，遙見二人浮江而至，乃是石像。背有銘誌，一名<Udef_contentPN Term="惟衛" PersonRefId="dila_A003431">惟衛</Udef_contentPN>，二名<Udef_contentPN Term="迦葉" PersonRefId="dila_A003432">迦葉</Udef_contentPN>。即接還安置<Udef_contentLN Term="通元寺" PlaceRefId="dila_PL000000009882">通元寺</Udef_contentLN>。<Udef_contentLN Term="吳中" PlaceRefId="dila_PL000000009990">吳中</Udef_contentLN>士庶嗟其靈異，歸心者眾矣。<Udef_contentPN Term="逹" PersonRefId="dila_A036833">逹</Udef_contentPN>停止<Udef_contentLN Term="通元寺" PlaceRefId="dila_PL000000009882">通元寺</Udef_contentLN>，首尾三年，晝夜虔禮，未嘗暫廢。頃之，進適<Udef_contentLN Term="會稽" PlaceRefId="dila_PL000000013244">會稽</Udef_contentLN>禮拜<Udef_contentLN Term="鄮縣" PlaceRefId="dila_PL000000012243">鄮縣</Udef_contentLN>塔。此塔亦是<Udef_contentPN Term="育王" PersonRefId="dila_A002034">育王</Udef_contentPN>所造，歲久荒蕪，示存基墌。<Udef_contentPN Term="逹" PersonRefId="dila_A036833">逹</Udef_contentPN>翹心束想，乃見神光燄發。因是脩立龕砌，群鳥無敢棲集。凡近寺側，畋漁者必無所復獲。道俗傳感，莫不移信。後郡守<Udef_contentPN Term="孟顗" PersonRefId="dila_A002587">孟顗</Udef_contentPN>復加開拓。<Udef_contentPN Term="逹" PersonRefId="dila_A036833">逹</Udef_contentPN>東西覬禮，屢表徵驗。精誠篤勵，終年無改。卒於本山，墖<Udef_contentLN Term="烏石嶴" PlaceRefId="dila_PL000000012226">烏石嶴</Udef_contentLN>。梁<Udef_contentLN Term="會稽" PlaceRefId="dila_PL000000013242">會稽</Udef_contentLN>沙門<Udef_contentPN Term="慧皎" PersonRefId="dila_A001724">慧皎</Udef_contentPN>撰</Paragraph>
+				
+
+                <MetaTags NoIndex="0">
+					<Udef_HotZoneCattree>4杭州/g010明州阿育王山志</Udef_HotZoneCattree>
+					<Udef_DocSource>g010明州阿育王山志</Udef_DocSource>
+                    
+					<Udef_HotZone>4杭州</Udef_HotZone>
+					<Udef_SourceCategoryCattree>g010明州阿育王山志/明州阿育王山志卷八/明州阿育王山志卷第八</Udef_SourceCategoryCattree>
+					<Udef_Cult></Udef_Cult>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="A044209">
+            <corpus>佛寺志人物傳記</corpus>
+            <compilation_vol>1</compilation_vol>
+            <title>閒曠達</title>
+            <geo_level2>四川省</geo_level2>
+            <geo_longitude>104.07593</geo_longitude>
+            <geo_latitude>30.651639</geo_latitude>
+            <geo_level3></geo_level3>
+            <timeseq_not_before></timeseq_not_before>
+            <timeseq_not_after></timeseq_not_after>
+            <xml_metadata>
+                <Udef_Biographs>1</Udef_Biographs>
+                <Udef_DocSource>g014明州岳林寺志</Udef_DocSource>
+                <Udef_AlternativeNames>延達;閒曠延達</Udef_AlternativeNames>
+                <Udef_Dynasty>唐</Udef_Dynasty>
+                <Udef_HotZone>4杭州</Udef_HotZone>
+                <Udef_Hometown>四川省</Udef_Hometown>
+                <Udef_PlaceDeceased></Udef_PlaceDeceased>
+				<Udef_SourceCategory1>g014明州岳林寺志/明州岳林寺志卷三/法系/唐</Udef_SourceCategory1>
+                <Udef_Cult></Udef_Cult>
+            </xml_metadata>
+            <time_dynasty>唐</time_dynasty>
+            <compilation_name>1</compilation_name>			
+
+            <doc_content>
+				<Paragraph Key="A044209_000" Type="傳主" Title="傳主"><PersonName Term="閒曠達" RefId="dila_A044209">閒曠達</PersonName></Paragraph>
+				<Paragraph Key="A044209_001" Type="籍貫" Title="籍貫"><Udef_NativePlace Term="四川省" PlaceRefId="dila_PL000000058489">四川省</Udef_NativePlace></Paragraph>
+				
+				<Paragraph Key="A044209_g014_1" Type="來源寺志" Title="來源寺志">g014<LocName Term="g014明州岳林寺志" RefId="dila_PL000000012464" DocuSkyAuth="@BTB::{g014}">g014明州岳林寺志</LocName>：明州岳林寺志卷三/法系/唐</Paragraph>
+<Paragraph Key="A044209_g014_1" Type="寺志內容" Title="寺志內容">諱延達，四川人。少時聰穎，性質孤高。後出塵，遍參法席。大中二年，徙建溪東，百廢具舉，殿閣改觀，遂號岳林寺。為開山第一祖焉。</Paragraph>
+				
+
+                <MetaTags NoIndex="0">
+					<Udef_HotZoneCattree>4杭州/g014明州岳林寺志</Udef_HotZoneCattree>
+					<Udef_DocSource>g014明州岳林寺志</Udef_DocSource>
+                    
+					<Udef_HotZone>4杭州</Udef_HotZone>
+					<Udef_SourceCategoryCattree>g014明州岳林寺志/明州岳林寺志卷三/法系/唐</Udef_SourceCategoryCattree>
+					<Udef_Cult></Udef_Cult>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="A000282">
+            <corpus>佛寺志人物傳記</corpus>
+            <compilation_vol>1</compilation_vol>
+            <title>延壽</title>
+            <geo_level2>餘杭</geo_level2>
+            <geo_longitude>119.9383</geo_longitude>
+            <geo_latitude>30.2543</geo_latitude>
+            <geo_level3></geo_level3>
+            <timeseq_not_before>0905</timeseq_not_before>
+            <timeseq_not_after>0976</timeseq_not_after>
+            <xml_metadata>
+                <Udef_Biographs>1</Udef_Biographs>
+                <Udef_DocSource>g016勅建淨慈寺志</Udef_DocSource>
+                <Udef_AlternativeNames>永明;永明壽;智覺禪師;永明延壽;仲玄;抱一子;宗照禪師;圓妙正修智覺禪師;知覺;慧日永明</Udef_AlternativeNames>
+                <Udef_Dynasty>五代十國;北宋</Udef_Dynasty>
+                <Udef_HotZone>4杭州</Udef_HotZone>
+                <Udef_Hometown>餘杭</Udef_Hometown>
+                <Udef_PlaceDeceased></Udef_PlaceDeceased>
+				<Udef_SourceCategory1>g016勅建淨慈寺志/勅建淨慈寺志卷八/住持一</Udef_SourceCategory1>
+                <Udef_Cult>法眼宗</Udef_Cult>
+            </xml_metadata>
+            <time_dynasty>五代十國;北宋</time_dynasty>
+            <compilation_name>1</compilation_name>			
+
+            <doc_content>
+				<Paragraph Key="A000282_000" Type="傳主" Title="傳主"><PersonName Term="延壽" RefId="dila_A000282">延壽</PersonName></Paragraph>
+				<Paragraph Key="A000282_001" Type="籍貫" Title="籍貫"><Udef_NativePlace Term="餘杭" PlaceRefId="dila_PL000000011893">餘杭</Udef_NativePlace></Paragraph>
+				
+				<Paragraph Key="A000282_g016_1" Type="來源寺志" Title="來源寺志">g016<LocName Term="g016勅建淨慈寺志" RefId="dila_PL000000011683" DocuSkyAuth="@BTB::{g016}">g016勅建淨慈寺志</LocName>：勅建淨慈寺志卷八/住持一</Paragraph>
+<Paragraph Key="A000282_g016_1" Type="寺志內容" Title="寺志內容">賜號智覺，餘杭王氏子。總角之歲，歸心佛乘。既冠，不茹葷，日唯一食，持《法華》，七行俱下。每展卷時，感羣羊跪聽。年十六，時吳越文穆王鎮餘杭。師獻〈齊天賦〉，眾推閒世之才，咸欲官之。至二十八，徵為餘杭庫吏，尋遷華亭鎮將，督納軍需。屢以庫錢買魚蝦等物放之，事發，坐死，領赴市曹。王預夢江上老人引魚蝦數萬至，云：「此皆稅務官所放者，願王免其罪。」王寢而遣使探之。師臨死地，神色不變，典刑者怪而詰之。師曰：「吾於庫錢，毫無私用，盡贖放生耳。」探者復命，王釋之。時翠巖參大闡元化於龍冊，王遂命禮翠巖為師。執勞供眾，都忘身宰，衣不繒纊，食無重味，野蔬布襦，以遣朝夕。尋往天台天柱峯，九旬習定，時有斥鷃巢衣襵中。定起，謁韶國師，一見而深器之，密授元旨。仍謂師曰：「汝與元帥有緣，他日大興佛事，惜吾不及見耳。」師於國清修懺，夜見神人持戟而入，師呵之曰：「何得擅入？」對曰：「久積善業，方到此中。」中夜經行，見普賢所執蓮花忽授在手，遂作二鬮，一曰一心禪定，一曰萬善淨土。冥心精禱曰：「於此二途，功易成者，須七拈著。」信手拈之，七度無間，由是一意淨業。嘗於金華天柱峯入定，見觀音灌以甘露，遂獲辨才無礙。廣順二年初，住雪竇，上堂：「雪竇這裏迅瀑千尋，不停纖粟，奇巖萬仞，無立足處。汝等諸人向甚麼處進步？」僧問：「雪竇一徑，如何履踐？」師曰：「步步寒花結，言言徹底冰。」師有偈曰：「孤猿叫落中巖月，野客吟殘半夜燈；此境此時誰會意？白雲深處坐禪僧。」建隆元年，忠懿王請開山靈隱。明年遷永明，眾盈二千。日課一百八事，夜往別峰行道，念佛空中，時聞螺貝天樂之聲。上堂，僧問：「如何是永明妙旨？」師曰：「更添香著。」曰：「謝指示。」師曰：「且喜沒交涉。」僧禮拜，師曰：「聽取一偈：欲識永明旨，門前一湖水，日照光明生，風來波浪起。」問：「學人久在永明，為甚麼不會永明家風？」師曰：「不會處會取。」曰：「不會處如何會取？」師曰：「牛胎生象子，碧海起紅塵。」問：「成佛成祖，亦出不得；六道輪回，亦出不得。未審出甚麼處不得？」師曰：「出汝問處不得。」問：「教中道，一切諸佛及諸佛法，皆從此經出。如何是此經？」師曰：「長時轉不停，非義亦非聲。」曰：「如何是受持？」師曰：「若欲受持者，應須著眼聽。」問：「如何是大圓鏡？」師曰：「破沙盆。」師居永明十五年，度弟子一千七百人。開寶三年，師奉詔，於月輪山建六和塔以鎮潮。七年，復入天台，度戒約萬餘人。夜施鬼神食，朝放諸生類，不可稱算。六時散花行道，餘力念《法華經》，計萬三千部。著《宗鏡錄》一百卷，詩偈賦詠凡千萬言。播於海外，高麗國王覽師言教，遣使齎書，敘弟子之禮，奉金線袈裟、紫水晶數珠、金澡罐等。彼國僧三十六人皆承印記，前後歸本國，各化一方。開寶八年十二月二十四日示疾，越二日，焚香告眾，跏趺而寂。塔於大慈山，宋太宗賜壽寧額，追諡宗照。師嗣天台韶，韶嗣法眼益，六祖青原派也。嗣師之法者，杭州乾明津富陽子蒙和尚。住山第一代</Paragraph>
+				
+
+                <MetaTags NoIndex="0">
+					<Udef_HotZoneCattree>4杭州/g016勅建淨慈寺志</Udef_HotZoneCattree>
+					<Udef_DocSource>g016勅建淨慈寺志</Udef_DocSource>
+                    <Udef_MonkType>興福</Udef_MonkType>
+					<Udef_HotZone>4杭州</Udef_HotZone>
+					<Udef_SourceCategoryCattree>g016勅建淨慈寺志/勅建淨慈寺志卷八/住持一</Udef_SourceCategoryCattree>
+					<Udef_Cult>法眼宗</Udef_Cult>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="A001869">
+            <corpus>佛寺志人物傳記</corpus>
+            <compilation_vol>1</compilation_vol>
+            <title>謝靈運</title>
+            <geo_level2>陽夏</geo_level2>
+            <geo_longitude>114.8655</geo_longitude>
+            <geo_latitude>34.063</geo_latitude>
+            <geo_level3></geo_level3>
+            <timeseq_not_before>0385</timeseq_not_before>
+            <timeseq_not_after>0433</timeseq_not_after>
+            <xml_metadata>
+                <Udef_Biographs>1</Udef_Biographs>
+                <Udef_DocSource>g007武林梵志</Udef_DocSource>
+                <Udef_AlternativeNames>謝客;康樂公;康公;謝康樂;謝康公;康樂侯;客兒;阿客;大謝</Udef_AlternativeNames>
+                <Udef_Dynasty>劉宋</Udef_Dynasty>
+                <Udef_HotZone>4杭州</Udef_HotZone>
+                <Udef_Hometown>陽夏</Udef_Hometown>
+                <Udef_PlaceDeceased></Udef_PlaceDeceased>
+				<Udef_SourceCategory1>g007武林梵志/宰官護持</Udef_SourceCategory1>
+                <Udef_Cult></Udef_Cult>
+            </xml_metadata>
+            <time_dynasty>劉宋</time_dynasty>
+            <compilation_name>1</compilation_name>			
+
+            <doc_content>
+				<Paragraph Key="A001869_000" Type="傳主" Title="傳主"><PersonName Term="謝靈運" RefId="dila_A001869">謝靈運</PersonName></Paragraph>
+				<Paragraph Key="A001869_001" Type="籍貫" Title="籍貫"><Udef_NativePlace Term="陽夏" PlaceRefId="dila_PL000000026110">陽夏</Udef_NativePlace></Paragraph>
+				
+				<Paragraph Key="A001869_g007_1" Type="來源寺志" Title="來源寺志">g007<LocName Term="g007武林梵志" RefId="dila_PL000000011508" DocuSkyAuth="@BTB::{g007}">g007武林梵志</LocName>：宰官護持</Paragraph>
+<Paragraph Key="A001869_g007_1" Type="寺志內容" Title="寺志內容">謝靈運，玄之孫，家於上虞少好學，博覽羣籍，文章稱江左第一。仕宋為永嘉太守，襲祖父封爵，故世稱康樂靈運。負才傲世至廬山，見遠公肅然心服，即寺築臺，譯涅槃經三十六卷。嘗撰佛讚曰：惟此大覺因心則靈垢盡智照數極慧明三達非我一援羣生理粗心行道絕形聲菩薩讚曰：若人仰宗發性遺慮以定養慧和理斯附爰初四等終然小住涉求至矣在外皆去緣覺聲聞，讚曰：厭苦情多兼物志少如彼化城權可得寶誘以涅槃救爾衰老肇元三事翻成一道北山天竺有靈運讀書臺</Paragraph>
+				
+
+                <MetaTags NoIndex="0">
+					<Udef_HotZoneCattree>4杭州/g007武林梵志</Udef_HotZoneCattree>
+					<Udef_DocSource>g007武林梵志</Udef_DocSource>
+                    
+					<Udef_HotZone>4杭州</Udef_HotZone>
+					<Udef_SourceCategoryCattree>g007武林梵志/宰官護持</Udef_SourceCategoryCattree>
+					<Udef_Cult></Udef_Cult>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="A007240">
+            <corpus>佛寺志人物傳記</corpus>
+            <compilation_vol>1</compilation_vol>
+            <title>慧鍔</title>
+            <geo_level2>日本</geo_level2>
+            <geo_longitude>139.691584</geo_longitude>
+            <geo_latitude>35.689508</geo_latitude>
+            <geo_level3></geo_level3>
+            <timeseq_not_before></timeseq_not_before>
+            <timeseq_not_after></timeseq_not_after>
+            <xml_metadata>
+                <Udef_Biographs>1</Udef_Biographs>
+                <Udef_DocSource>g009普陀洛迦新志</Udef_DocSource>
+                <Udef_AlternativeNames>惠鍔;慧萼</Udef_AlternativeNames>
+                <Udef_Dynasty>五代十國</Udef_Dynasty>
+                <Udef_HotZone>4杭州</Udef_HotZone>
+                <Udef_Hometown>日本</Udef_Hometown>
+                <Udef_PlaceDeceased></Udef_PlaceDeceased>
+				<Udef_SourceCategory1>g009普陀洛迦新志/普陀洛迦新志卷六/禪德門第六/一、普濟住持共五十五傳/〔五代梁〕慧鍔</Udef_SourceCategory1>
+                <Udef_Cult></Udef_Cult>
+            </xml_metadata>
+            <time_dynasty>五代十國</time_dynasty>
+            <compilation_name>1</compilation_name>			
+
+            <doc_content>
+				<Paragraph Key="A007240_000" Type="傳主" Title="傳主"><PersonName Term="慧鍔" RefId="dila_A007240">慧鍔</PersonName></Paragraph>
+				<Paragraph Key="A007240_001" Type="籍貫" Title="籍貫"><Udef_NativePlace Term="日本" PlaceRefId="dila_PL000000048414">日本</Udef_NativePlace></Paragraph>
+				
+				<Paragraph Key="A007240_g009_1" Type="來源寺志" Title="來源寺志">g009<LocName Term="g009普陀洛迦新志" RefId="dila_PL000000013847" DocuSkyAuth="@BTB::{g009}">g009普陀洛迦新志</LocName>：普陀洛迦新志卷六/禪德門第六/一、普濟住持共五十五傳/〔五代梁〕慧鍔</Paragraph>
+<Paragraph Key="A007240_g009_1" Type="寺志內容" Title="寺志內容"><Udef_contentLN Term="日本" PlaceRefId="dila_PL000000048414">日本</Udef_contentLN>僧。五代梁貞明二年，從<Udef_contentLN Term="五臺山" PlaceRefId="dila_PL000000005250">五臺山</Udef_contentLN>得觀音像，將還本國；舟觸<Udef_contentLN Term="新螺礁" PlaceRefId="dila_PL000000014057">新螺礁</Udef_contentLN>，蓮花當洋，舟蔽不前。<Udef_contentPN Term="鍔" PersonRefId="dila_A007240">鍔</Udef_contentPN>禱曰：「使我國眾生無緣見佛，當從所向建立精藍？」有頃，舟行，竟止<Udef_contentLN Term="潮音洞" PlaceRefId="dila_PL000000014058">潮音洞</Udef_contentLN>下。居民<Udef_contentPN Term="張氏" PersonRefId="dila_A019633">張氏</Udef_contentPN>目覩斯異，亟舍所居<Udef_contentLN Term="雙峯山" PlaceRefId="dila_PL000000013975">雙峯山</Udef_contentLN>，築庵奉之，呼為<Udef_contentLN Term="不肯去觀音院" PlaceRefId="dila_PL000000014059">不肯去觀音院</Udef_contentLN>。斯為<Udef_contentLN Term="普陀" PlaceRefId="dila_PL000000013847">普陀</Udef_contentLN>開創奉佛之始，故<Udef_contentPN Term="鍔" PersonRefId="dila_A007240">鍔</Udef_contentPN>為開山第一代。清<Udef_contentPN Term="通旭" PersonRefId="dila_A001147">通旭</Udef_contentPN>贊其像曰：「親從<Udef_contentLN Term="五臺" PlaceRefId="dila_PL000000005250">五臺</Udef_contentLN>來，欲向<Udef_contentLN Term="日本" PlaceRefId="dila_PL000000048414">日本</Udef_contentLN>去。普門名號徧十方，何必繪像圖歸計？忽然舟不行，菩薩應無住。聽其止而休，此貨已成滯。一山名勝待師開，天下羣瞻兩足地。」《裘志．古蹟門》；《許》、《秦》二志〈靈異〉</Paragraph>
+				
+
+                <MetaTags NoIndex="0">
+					<Udef_HotZoneCattree>4杭州/g009普陀洛迦新志</Udef_HotZoneCattree>
+					<Udef_DocSource>g009普陀洛迦新志</Udef_DocSource>
+                    
+					<Udef_HotZone>4杭州</Udef_HotZone>
+					<Udef_SourceCategoryCattree>g009普陀洛迦新志/普陀洛迦新志卷六/禪德門第六/一、普濟住持共五十五傳/〔五代梁〕慧鍔</Udef_SourceCategoryCattree>
+					<Udef_Cult></Udef_Cult>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="A007508">
+            <corpus>佛寺志人物傳記</corpus>
+            <compilation_vol>1</compilation_vol>
+            <title>李英</title>
+            <geo_level2></geo_level2>
+            <geo_longitude>0</geo_longitude>
+            <geo_latitude>0</geo_latitude>
+            <geo_level3></geo_level3>
+            <timeseq_not_before></timeseq_not_before>
+            <timeseq_not_after></timeseq_not_after>
+            <xml_metadata>
+                <Udef_Biographs>1</Udef_Biographs>
+                <Udef_DocSource>g008重修普陀山志</Udef_DocSource>
+                <Udef_AlternativeNames></Udef_AlternativeNames>
+                <Udef_Dynasty>元</Udef_Dynasty>
+                <Udef_HotZone>4杭州</Udef_HotZone>
+                <Udef_Hometown></Udef_Hometown>
+                <Udef_PlaceDeceased></Udef_PlaceDeceased>
+				<Udef_SourceCategory1>g008重修普陀山志/普陀山志卷二/命使/〔元〕李英</Udef_SourceCategory1>
+                <Udef_Cult></Udef_Cult>
+            </xml_metadata>
+            <time_dynasty>元</time_dynasty>
+            <compilation_name>1</compilation_name>			
+
+            <doc_content>
+				<Paragraph Key="A007508_000" Type="傳主" Title="傳主"><PersonName Term="李英" RefId="dila_A007508">李英</PersonName></Paragraph>
+				
+				
+				<Paragraph Key="A007508_g008_1" Type="來源寺志" Title="來源寺志">g008<LocName Term="g008重修普陀山志" RefId="dila_PL000000013847" DocuSkyAuth="@BTB::{g008}">g008重修普陀山志</LocName>：普陀山志卷二/命使/〔元〕李英</Paragraph>
+<Paragraph Key="A007508_g008_1" Type="寺志內容" Title="寺志內容">內侍。大德二年，中宮命降香修宇。</Paragraph>
+				
+
+                <MetaTags NoIndex="0">
+					<Udef_HotZoneCattree>4杭州/g008重修普陀山志</Udef_HotZoneCattree>
+					<Udef_DocSource>g008重修普陀山志</Udef_DocSource>
+                    
+					<Udef_HotZone>4杭州</Udef_HotZone>
+					<Udef_SourceCategoryCattree>g008重修普陀山志/普陀山志卷二/命使/〔元〕李英</Udef_SourceCategoryCattree>
+					<Udef_Cult></Udef_Cult>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="A007509">
+            <corpus>佛寺志人物傳記</corpus>
+            <compilation_vol>1</compilation_vol>
+            <title>王貴</title>
+            <geo_level2></geo_level2>
+            <geo_longitude>0</geo_longitude>
+            <geo_latitude>0</geo_latitude>
+            <geo_level3></geo_level3>
+            <timeseq_not_before></timeseq_not_before>
+            <timeseq_not_after></timeseq_not_after>
+            <xml_metadata>
+                <Udef_Biographs>1</Udef_Biographs>
+                <Udef_DocSource>g008重修普陀山志</Udef_DocSource>
+                <Udef_AlternativeNames></Udef_AlternativeNames>
+                <Udef_Dynasty>宋</Udef_Dynasty>
+                <Udef_HotZone>4杭州</Udef_HotZone>
+                <Udef_Hometown></Udef_Hometown>
+                <Udef_PlaceDeceased></Udef_PlaceDeceased>
+				<Udef_SourceCategory1>g008重修普陀山志/普陀山志卷二/命使/〔宋〕王貴</Udef_SourceCategory1>
+                <Udef_Cult></Udef_Cult>
+            </xml_metadata>
+            <time_dynasty>宋</time_dynasty>
+            <compilation_name>1</compilation_name>			
+
+            <doc_content>
+				<Paragraph Key="A007509_000" Type="傳主" Title="傳主"><PersonName Term="王貴" RefId="dila_A007509">王貴</PersonName></Paragraph>
+				
+				
+				<Paragraph Key="A007509_g008_1" Type="來源寺志" Title="來源寺志">g008<LocName Term="g008重修普陀山志" RefId="dila_PL000000013847" DocuSkyAuth="@BTB::{g008}">g008重修普陀山志</LocName>：普陀山志卷二/命使/〔宋〕王貴</Paragraph>
+<Paragraph Key="A007509_g008_1" Type="寺志內容" Title="寺志內容">內侍。乾德丁卯，遣齎香旛詣山。</Paragraph>
+				
+
+                <MetaTags NoIndex="0">
+					<Udef_HotZoneCattree>4杭州/g008重修普陀山志</Udef_HotZoneCattree>
+					<Udef_DocSource>g008重修普陀山志</Udef_DocSource>
+                    
+					<Udef_HotZone>4杭州</Udef_HotZone>
+					<Udef_SourceCategoryCattree>g008重修普陀山志/普陀山志卷二/命使/〔宋〕王貴</Udef_SourceCategoryCattree>
+					<Udef_Cult></Udef_Cult>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="A009233">
+            <corpus>佛寺志人物傳記</corpus>
+            <compilation_vol>1</compilation_vol>
+            <title>道潛</title>
+            <geo_level2>蒲津</geo_level2>
+            <geo_longitude>110.291434</geo_longitude>
+            <geo_latitude>34.844926</geo_latitude>
+            <geo_level3></geo_level3>
+            <timeseq_not_before></timeseq_not_before>
+            <timeseq_not_after>0961</timeseq_not_after>
+            <xml_metadata>
+                <Udef_Biographs>1</Udef_Biographs>
+                <Udef_DocSource>g016勅建淨慈寺志</Udef_DocSource>
+                <Udef_AlternativeNames>釋道潛;慈化定慧應真禪師;永明道潛</Udef_AlternativeNames>
+                <Udef_Dynasty>五代十國</Udef_Dynasty>
+                <Udef_HotZone>4杭州</Udef_HotZone>
+                <Udef_Hometown>蒲津</Udef_Hometown>
+                <Udef_PlaceDeceased></Udef_PlaceDeceased>
+				<Udef_SourceCategory1>g016勅建淨慈寺志/勅建淨慈寺志卷八/住持一</Udef_SourceCategory1>
+                <Udef_Cult>法眼宗</Udef_Cult>
+            </xml_metadata>
+            <time_dynasty>五代十國</time_dynasty>
+            <compilation_name>1</compilation_name>			
+
+            <doc_content>
+				<Paragraph Key="A009233_000" Type="傳主" Title="傳主"><PersonName Term="道潛" RefId="dila_A009233">道潛</PersonName></Paragraph>
+				<Paragraph Key="A009233_001" Type="籍貫" Title="籍貫"><Udef_NativePlace Term="蒲津" PlaceRefId="dila_PL000000005165">蒲津</Udef_NativePlace></Paragraph>
+				
+				<Paragraph Key="A009233_g016_1" Type="來源寺志" Title="來源寺志">g016<LocName Term="g016勅建淨慈寺志" RefId="dila_PL000000011683" DocuSkyAuth="@BTB::{g016}">g016勅建淨慈寺志</LocName>：勅建淨慈寺志卷八/住持一</Paragraph>
+<Paragraph Key="A009233_g016_1" Type="寺志內容" Title="寺志內容">蒲津武氏子，生而強壯端雅，身長七尺許，胸痣七點，若北斗狀，投棲巖真寂出家。初謁法眼，眼問曰：「子於參請外，看甚麼經？」師曰：「《華嚴經》。」眼曰：「總別、同異、成壞六相，是何門攝屬？」師曰：「文在十地品中，據理則世出世間一切法皆具六相也。」眼曰：「空還具六相也？」無師懵然無對。眼曰：「汝問我，我向汝道。」師乃問：「空還具六相也無？」眼曰：「空。」師於是開悟，踴躍禮謝。眼曰：「子作麼生會？」師曰：「空。」眼然之。異日，因四眾士女入院，眼問師曰：「律中道，隔壁聞釵釧聲，即名破戒。見觀金銀合雜、朱紫駢闐，是破戒？不是破戒？」師曰：「好箇入路。」眼曰：「子向後有五百毳徒，為王侯所重在。」師尋禮辭，駐錫衢州古寺，閱《大藏經》，嘗宴坐中見文殊現形，不覺起而作禮。及詣杭，禮阿育王塔，見舍利紅色蠢瞤而行。又於山齊齋行三七日普賢懺，忽見徧吉御象在山門，鼻直枕行懺所。未幾，忠懿王命入府受菩薩戒，署慈化定慧禪師，建大伽藍，號慧日永明，請居之。師欲請塔下羅漢銅像過新寺供養，王曰：「善矣！昨夜夢十六尊者乞隨禪師入寺，何昭應之若是。」仍於師號加「應真」二字。師坐永明，常五百眾。上堂：「佛法顯然，因甚麼不會？諸上座！欲會佛法，但問取張三李四。欲會世法，則參取古佛叢林。」無事久立，僧問：「如何是永明的的意？」師曰：「今日十五，明朝十六。」曰：「覽師的的意。」師曰：「何處覽？」問：「如何是永明家風？」師曰：「早被上座答了也。」問：「如何是慧日祥光？」師曰：「此去報慈不遠。」曰：「恁麼則親蒙照燭。」師曰：「且喜沒交涉。」建隆二年辛酉九月十八日示寂而化。入龕之際，有白光晝發。至十月，茶毘於龍井山，所收舍利甚多。開寶庚午，韶師建塔天台藏焉。癸酉，塔頂放白光，如初化時。開山始祖</Paragraph>
+				
+
+                <MetaTags NoIndex="0">
+					<Udef_HotZoneCattree>4杭州/g016勅建淨慈寺志</Udef_HotZoneCattree>
+					<Udef_DocSource>g016勅建淨慈寺志</Udef_DocSource>
+                    
+					<Udef_HotZone>4杭州</Udef_HotZone>
+					<Udef_SourceCategoryCattree>g016勅建淨慈寺志/勅建淨慈寺志卷八/住持一</Udef_SourceCategoryCattree>
+					<Udef_Cult>法眼宗</Udef_Cult>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="A001003">
+            <corpus>佛寺志人物傳記</corpus>
+            <compilation_vol>1</compilation_vol>
+            <title>馬鳴</title>
+            <geo_level2>舍衛國</geo_level2>
+            <geo_longitude>82.050346</geo_longitude>
+            <geo_latitude>27.517038</geo_latitude>
+            <geo_level3></geo_level3>
+            <timeseq_not_before>0100</timeseq_not_before>
+            <timeseq_not_after>0160</timeseq_not_after>
+            <xml_metadata>
+                <Udef_Biographs>1</Udef_Biographs>
+                <Udef_DocSource>g017玉岑山慧因高麗華嚴教寺志</Udef_DocSource>
+                <Udef_AlternativeNames>Aśvaghoṣa;DharamsubhutiRtadbyangs法善現;達磨蘇婆底;法實;法須菩提;達磨須部底;達磨須婆吼底;法救善現;大勇;功勝</Udef_AlternativeNames>
+                <Udef_Dynasty>印度</Udef_Dynasty>
+                <Udef_HotZone>4杭州</Udef_HotZone>
+                <Udef_Hometown>舍衛國</Udef_Hometown>
+                <Udef_PlaceDeceased></Udef_PlaceDeceased>
+				<Udef_SourceCategory1>g017玉岑山慧因高麗華嚴教寺志/慧因寺志卷之三/祖德</Udef_SourceCategory1>
+                <Udef_Cult></Udef_Cult>
+            </xml_metadata>
+            <time_dynasty>印度</time_dynasty>
+            <compilation_name>1</compilation_name>			
+
+            <doc_content>
+				<Paragraph Key="A001003_000" Type="傳主" Title="傳主"><PersonName Term="馬鳴" RefId="dila_A001003">馬鳴</PersonName></Paragraph>
+				<Paragraph Key="A001003_001" Type="籍貫" Title="籍貫"><Udef_NativePlace Term="舍衛國" PlaceRefId="dila_PL000000048396">舍衛國</Udef_NativePlace></Paragraph>
+				
+				<Paragraph Key="A001003_g017_1" Type="來源寺志" Title="來源寺志">g017<LocName Term="g017玉岑山慧因高麗華嚴教寺志" RefId="dila_PL000000011601" DocuSkyAuth="@BTB::{g017}">g017玉岑山慧因高麗華嚴教寺志</LocName>：慧因寺志卷之三/祖德</Paragraph>
+<Paragraph Key="A001003_g017_1" Type="寺志內容" Title="寺志內容"><Udef_contentLN Term="波羅柰國" PlaceRefId="dila_PL000000048400">波羅柰國</Udef_contentLN>人。受法於<Udef_contentPN Term="夜奢尊者" PersonRefId="dila_A004176">夜奢尊者</Udef_contentPN>，後於<Udef_contentLN Term="華氏國" PlaceRefId="dila_PL000000048279">華氏國</Udef_contentLN>轉妙法輪。忽有老人坐前仆地，師謂眾曰：「此非庸流，當有異相。」言訖不見。俄從地湧出金色人，復化為女子，右手指師而說偈曰：「稽首長老尊，當授如來記。今於此地上，宣通第一義。」遂造《中論》，明一切法皆自一心，囊括本末，開《華嚴》秘義之始。忽有魔，<Udef_contentPN Term="迦毘摩羅" PersonRefId="dila_A004471">迦毘摩羅</Udef_contentPN>，數狎師。師出神力降之，示以性海三昧。<Udef_contentPN Term="魔" PersonRefId="dila_A004471">魔</Udef_contentPN>始發信心，率眷屬三千，俱求剃度。師因示以大法眼藏，為說偈曰：隱顯即本法明暗原不二今付悟了法非取亦非離付法已，即入龍奮迅三昧，挺身空中，如日輪相，然後示滅。是為<Udef_contentLN Term="西域" PlaceRefId="dila_PL000000055436">西域</Udef_contentLN>第十二祖。</Paragraph>
+				
+
+                <MetaTags NoIndex="0">
+					<Udef_HotZoneCattree>4杭州/g017玉岑山慧因高麗華嚴教寺志</Udef_HotZoneCattree>
+					<Udef_DocSource>g017玉岑山慧因高麗華嚴教寺志</Udef_DocSource>
+                    
+					<Udef_HotZone>4杭州</Udef_HotZone>
+					<Udef_SourceCategoryCattree>g017玉岑山慧因高麗華嚴教寺志/慧因寺志卷之三/祖德</Udef_SourceCategoryCattree>
+					<Udef_Cult></Udef_Cult>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="A006941">
+            <corpus>佛寺志人物傳記</corpus>
+            <compilation_vol>1</compilation_vol>
+            <title>清了</title>
+            <geo_level2>龍安</geo_level2>
+            <geo_longitude>104.4283</geo_longitude>
+            <geo_latitude>31.6636</geo_latitude>
+            <geo_level3></geo_level3>
+            <timeseq_not_before>1088</timeseq_not_before>
+            <timeseq_not_after>1151</timeseq_not_after>
+            <xml_metadata>
+                <Udef_Biographs>1</Udef_Biographs>
+                <Udef_DocSource>g009普陀洛迦新志</Udef_DocSource>
+                <Udef_AlternativeNames>真歇;真歇清了;真歇了;寂庵;悟空禪師;青了</Udef_AlternativeNames>
+                <Udef_Dynasty>南宋</Udef_Dynasty>
+                <Udef_HotZone>4杭州</Udef_HotZone>
+                <Udef_Hometown>龍安</Udef_Hometown>
+                <Udef_PlaceDeceased></Udef_PlaceDeceased>
+				<Udef_SourceCategory1>g009普陀洛迦新志/普陀洛迦新志卷六/禪德門第六/一、普濟住持共五十五傳/〔宋〕真歇</Udef_SourceCategory1>
+                <Udef_Cult>曹洞宗</Udef_Cult>
+            </xml_metadata>
+            <time_dynasty>南宋</time_dynasty>
+            <compilation_name>1</compilation_name>			
+
+            <doc_content>
+				<Paragraph Key="A006941_000" Type="傳主" Title="傳主"><PersonName Term="清了" RefId="dila_A006941">清了</PersonName></Paragraph>
+				<Paragraph Key="A006941_001" Type="籍貫" Title="籍貫"><Udef_NativePlace Term="龍安" PlaceRefId="dila_PL000000035528">龍安</Udef_NativePlace></Paragraph>
+				
+				<Paragraph Key="A006941_g009_1" Type="來源寺志" Title="來源寺志">g009<LocName Term="g009普陀洛迦新志" RefId="dila_PL000000013847" DocuSkyAuth="@BTB::{g009}">g009普陀洛迦新志</LocName>：普陀洛迦新志卷六/禪德門第六/一、普濟住持共五十五傳/〔宋〕真歇</Paragraph>
+<Paragraph Key="A006941_g009_1" Type="寺志內容" Title="寺志內容">名<Udef_contentPN Term="清了" PersonRefId="dila_A006941">清了</Udef_contentPN>「清」一作「青」，<Udef_contentLN Term="蜀" PlaceRefId="dila_PL000000035103">蜀</Udef_contentLN>之雍氏子。生有慧根，眉目疎秀，神宇靜深。見佛則欣戀不捨。年十一，依<Udef_contentLN Term="聖果寺" PlaceRefId="dila_PL000000055523">聖果寺</Udef_contentLN><Udef_contentPN Term="俊僧" PersonRefId="dila_A014403">俊僧</Udef_contentPN>受業。又七歲，試《法華經》得度。具戒聽講，玄解經論。以為言說終非究竟。出峽抵<Udef_contentLN Term="沔漢" PlaceRefId="dila_PL000000026396">沔漢</Udef_contentLN>，扣<Udef_contentLN Term="丹霞" PlaceRefId="dila_PL000000025261">丹霞</Udef_contentLN><Udef_contentPN Term="淳和尚" PersonRefId="dila_A000084">淳和尚</Udef_contentPN>。<Udef_contentPN Term="淳" PersonRefId="dila_A000084">淳</Udef_contentPN>問：「如何是空劫時自己？」<Udef_contentPN Term="歇" PersonRefId="dila_A006941">歇</Udef_contentPN>擬對，<Udef_contentPN Term="淳" PersonRefId="dila_A000084">淳</Udef_contentPN>掌之，遂契旨。翌日<Udef_contentPN Term="淳" PersonRefId="dila_A000084">淳</Udef_contentPN>上堂曰：「日照孤峯翠，月臨溪水寒。祖師玄妙訣，莫向寸心安。」<Udef_contentPN Term="歇" PersonRefId="dila_A006941">歇</Udef_contentPN>趨進曰：「今日瞞某甲不得也。」曰：「試舉看。」<Udef_contentPN Term="歇" PersonRefId="dila_A006941">歇</Udef_contentPN>良久。<Udef_contentPN Term="淳" PersonRefId="dila_A000084">淳</Udef_contentPN>曰：「將謂爾瞥地。」<Udef_contentPN Term="歇" PersonRefId="dila_A006941">歇</Udef_contentPN>便出。輒北遊<Udef_contentLN Term="五臺" PlaceRefId="dila_PL000000005250">五臺</Udef_contentLN>、<Udef_contentLN Term="京汴" PlaceRefId="dila_PL000000023326">京汴</Udef_contentLN>，南抵<Udef_contentLN Term="儀徵" PlaceRefId="dila_PL000000010886">儀徵</Udef_contentLN>，謁<Udef_contentLN Term="長蘆" PlaceRefId="dila_PL000000009264">長蘆</Udef_contentLN><Udef_contentPN Term="祖照" PersonRefId="dila_A014328">祖照</Udef_contentPN>。紹興元年辛亥，自<Udef_contentLN Term="長蘆" PlaceRefId="dila_PL000000009264">長蘆</Udef_contentLN>南遊，浮海至<Udef_contentLN Term="普陀" PlaceRefId="dila_PL000000013847">普陀</Udef_contentLN>，結庵山椒，扁曰「海岸孤絕處」。禪林英秀多依之，郡請於朝，易律為禪。時海山七百餘家俱業漁，一聞教音，俱棄舟去，日活千萬億命。後主<Udef_contentLN Term="國清" PlaceRefId="dila_PL000000014664">國清</Udef_contentLN>、<Udef_contentLN Term="雪峯" PlaceRefId="dila_PL000000017205">雪峯</Udef_contentLN>、<Udef_contentLN Term="育王" PlaceRefId="dila_PL000000012309">育王</Udef_contentLN>、<Udef_contentLN Term="龍翔" PlaceRefId="dila_PL000000012507">龍翔</Udef_contentLN>、<Udef_contentLN Term="興慶" PlaceRefId="dila_PL000000012508">興慶</Udef_contentLN>、<Udef_contentLN Term="雙徑" PlaceRefId="dila_PL000000011848">雙徑</Udef_contentLN>。凡七處說法，五承紫泥之詔。得度弟子四百，嗣法者三十餘人。有《語錄》二集若干卷行世。塔在<Udef_contentLN Term="無畏石" PlaceRefId="dila_PL000000013857">無畏石</Udef_contentLN>。<Udef_contentLN Term="普陀" PlaceRefId="dila_PL000000013847">普陀</Udef_contentLN>禪宗自<Udef_contentPN Term="歇" PersonRefId="dila_A006941">歇</Udef_contentPN>始，為開宗第一代。由是飛錫此山者，皆具曹溪正法眼藏。舊志；《大德志》按：宏宗、闡戒，二者為佛門大綱。悟道為禪，守道為戒。學佛者不由持戒而欲得定慧，亦猶吾儒舍身體力行而欲得薪傳。若戒不清淨，則禪何由悟？故宏法者，持戒與參禪並重。明<Udef_contentPN Term="釋傳燈" PersonRefId="dila_A007274">釋傳燈</Udef_contentPN>輯《天台方外志》，於「僧德門」分：〈聖僧考〉，如宋<Udef_contentPN Term="德韶" PersonRefId="dila_A007257">德韶</Udef_contentPN>、<Udef_contentPN Term="濟顛" PersonRefId="dila_A008109">濟顛</Udef_contentPN>諸人是；〈祖師考〉，如<Udef_contentPN Term="龍樹尊者" PersonRefId="dila_A001482">龍樹尊者</Udef_contentPN>、<Udef_contentPN Term="智者大師" PersonRefId="dila_A001301">智者大師</Udef_contentPN>諸人是；〈高僧考〉，「教」，則有<Udef_contentPN Term="慧命" PersonRefId="dila_A011857">慧命</Udef_contentPN>、<Udef_contentPN Term="真清" PersonRefId="dila_A008332">真清</Udef_contentPN>諸人；「禪」，則有<Udef_contentPN Term="遺則" PersonRefId="dila_A010413">遺則</Udef_contentPN>、<Udef_contentPN Term="真歇" PersonRefId="dila_A006941">真歇</Udef_contentPN>諸人；「蓮」，則有<Udef_contentPN Term="南嶽" PersonRefId="dila_A001711">南嶽</Udef_contentPN>、<Udef_contentPN Term="智者" PersonRefId="dila_A001301">智者</Udef_contentPN>諸大師。<Udef_contentLN Term="普陀" PlaceRefId="dila_PL000000013847">普陀</Udef_contentLN>以<Udef_contentPN Term="真歇" PersonRefId="dila_A006941">真歇</Udef_contentPN>為開宗第一代，其為禪宗乎？然<Udef_contentPN Term="真歇" PersonRefId="dila_A006941">真歇</Udef_contentPN>嘗謂：「淨土一法，直接上上根器，傍引中下之流。」又謂：「乃佛乃祖，在教在禪，皆修淨土，同歸一源。」知其禪淨雙修，即漸即頓；與高語明心見性、超凡入聖、不務事修以期實證者，實天淵懸殊也。</Paragraph>
+				
+
+                <MetaTags NoIndex="0">
+					<Udef_HotZoneCattree>4杭州/g009普陀洛迦新志</Udef_HotZoneCattree>
+					<Udef_DocSource>g009普陀洛迦新志</Udef_DocSource>
+                    <Udef_MonkType>習禪</Udef_MonkType>
+					<Udef_HotZone>4杭州</Udef_HotZone>
+					<Udef_SourceCategoryCattree>g009普陀洛迦新志/普陀洛迦新志卷六/禪德門第六/一、普濟住持共五十五傳/〔宋〕真歇</Udef_SourceCategoryCattree>
+					<Udef_Cult>曹洞宗</Udef_Cult>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="A042144">
+            <corpus>佛寺志人物傳記</corpus>
+            <compilation_vol>1</compilation_vol>
+            <title>靈慧慈運</title>
+            <geo_level2>湘潭</geo_level2>
+            <geo_longitude>112.9198</geo_longitude>
+            <geo_latitude>27.8718</geo_latitude>
+            <geo_level3></geo_level3>
+            <timeseq_not_before>1827</timeseq_not_before>
+            <timeseq_not_after>1910</timeseq_not_after>
+            <xml_metadata>
+                <Udef_Biographs>1</Udef_Biographs>
+                <Udef_DocSource>g013七塔寺志</Udef_DocSource>
+                <Udef_AlternativeNames>皈依</Udef_AlternativeNames>
+                <Udef_Dynasty>清</Udef_Dynasty>
+                <Udef_HotZone>4杭州</Udef_HotZone>
+                <Udef_Hometown>湘潭</Udef_Hometown>
+                <Udef_PlaceDeceased></Udef_PlaceDeceased>
+				<Udef_SourceCategory1>g013七塔寺志/七塔寺志卷之五/志僧譜</Udef_SourceCategory1>
+<Udef_SourceCategory2>g013七塔寺志/七塔寺志卷之五/志僧譜</Udef_SourceCategory2>
+                <Udef_Cult></Udef_Cult>
+            </xml_metadata>
+            <time_dynasty>清</time_dynasty>
+            <compilation_name>1</compilation_name>			
+
+            <doc_content>
+				<Paragraph Key="A042144_000" Type="傳主" Title="傳主"><PersonName Term="靈慧慈運" RefId="dila_A042144">靈慧慈運</PersonName></Paragraph>
+				<Paragraph Key="A042144_001" Type="籍貫" Title="籍貫"><Udef_NativePlace Term="湘潭" PlaceRefId="dila_PL000000028836">湘潭</Udef_NativePlace></Paragraph>
+				
+				<Paragraph Key="A042144_g013_1" Type="來源寺志" Title="來源寺志">g013<LocName Term="g013七塔寺志" RefId="dila_PL000000012202" DocuSkyAuth="@BTB::{g013}">g013七塔寺志</LocName>：七塔寺志卷之五/志僧譜</Paragraph>
+<Paragraph Key="A042144_g013_1" Type="寺志內容" Title="寺志內容">陳寥士大師諱靈慧，字慈運，號皈依，湖南湘潭朱氏子。母郭氏，兄弟三人，師其次也。少時販米湘鄂間，舟出洞庭，遇盜。盜驚其魁梧，欲脅為羽屬，師不可。盜壯之，反其貨，且戒羣盜曰：「朱某奇男子，他日邂逅，慎勿害。」年十八，忽觸宿願，投義寧昌明禪師披薙。越二年，就野禪聲和尚受具戒，咨決法要。和尚指示宗門向上一著，師即於此決信無疑。嗣後參訪諸方知識，益明禪淨不二之旨。清道光三十年庚戌，朝南海觀音大士，是為師來浙之始。咸同以還，卓錫鄞鎮間。初蒞接待寺，值紅羊之役，市井荒墟，雞犬無聞。比寇至，見師獨在，叱之曰：「諸僧皆逸，汝敢獨留？」師從容曰：「捨佛以求苟生，不如誓死以維香火。」寇感其義，授黃旗一，並戒眾勿犯。時邑中精藍均遭焚劫，而此寺獨無恙。寇退，移錫於鎮之永寧寺。同治二年癸亥，改主萬善寺。庚午，受雲龍寺普洽皓公祖燈，是為臨濟第三十九世正傳。甲戌，主席天童寺，葺殿宇，裝佛像，治水利，講農殖，功德美滿，十方稱讚。他如開佛光，給佛牒，建水陸等，胥師所首倡。光緒三年丁丑，出鉢資修萬善寺。庚寅，徇地方之請，住持七塔報恩寺。時寺遭兵燹，法器蕩然。周文學醫師母子，苦行募化，僅建一二。雅志未償，齎恨西歸。及迎師至，慘淡經營，始復舊觀。古剎中興，師之力也。初修客堂、庫房、禪堂、雲水堂、鐘樓，並設監院、知客、維那各職，規模略具。次年，重塑大殿千手觀音聖像，以湘刻五百羅漢供於周壁。又次年，傳授友法、月波、岐昌、一禪、本來、玉忠等為法徒，令肩各寮執事，修築三聖殿。新塑三聖，法身高二丈八尺有奇，莊嚴妙相，甲於諸方。又三年，為西方三聖像及千手觀音聖像開點靈光。翌年，赴都請頒龍藏，勅賜報恩寺額。翌年丙申，師世臘七十，傳授三壇戒法。翌年建藏經閣，重修開山心鏡祖塔。又翌年，向湘購置大鐘一口，重一萬八千餘斤。厥後造自流井，建香積廚，凡百工事，不一而足。至歲丙午，師年登八十，復傳壽戒，成就衣鉢具及海青，四方前來乞戒者甚眾。宣統二年庚戌八月二十九日圓寂，世壽八十有四，僧臘六十有七。築塔於天童玲瓏岩下。門下法眷，化及四方，遠至南洋、印度、日本、台灣，聲聞廣大。余少時常見師，又數從岐昌、圓瑛、智圓、溥常諸上座游，備聞行誼。因次其要者，為之傳。</Paragraph>
+<Paragraph Key="A042144_g013_2" Type="來源寺志" Title="來源寺志">g013<LocName Term="g013七塔寺志" RefId="dila_PL000000012202" DocuSkyAuth="@BTB::{g013}">g013七塔寺志</LocName>：七塔寺志卷之五/志僧譜</Paragraph>
+<Paragraph Key="A042144_g013_2" Type="寺志內容" Title="寺志內容">王宇高師諱靈慧，字慈運，皈依其號，四明七塔報恩寺主僧也。寺為唐代古剎，再被火，廢焉。清光緒間，師為營度建置，凡浮屠所宜有者，無不粲然完具。僧徒來歸日益眾，遂復唐時舊觀，世稱七塔中興第一代云。師故湘潭朱姓，母氏郭，兄弟三人，師次仲。稍長，詣義寧福田庵為僧。既受具戒，走南北參訪。道光間，來浙謁普陀觀音大士。咸豐時，至四明居接待寺。同治癸亥，徙萬善寺。庚午，得雲龍寺普洽皓公之法，實為臨濟正宗第三十九世也。甲戌，主天童寺。踰三年，復居萬善。最後為七塔主僧，光緒庚寅迄宣統庚戌，凡二十年。以八月廿九日卒，葬於天童玲瓏巖之下。年八十四，為僧六十有六年。初，師於接待為汎掃香燈時，洪楊之黨入境，寺僧奔竄無一人，獨師留。眾兵見師潔除已，焚香佛後拜跪，氣度閒靜，異焉。圍觀良久，乃問：「汝不去，獨不畏死乎？」師笑曰：「出家兒，不知有死生也。」其魁出黃旗一，樹寺門，兵遂不復來。是時四明諸寺多被劫，或焚而毀矣，而接待賴師以全。其居萬善，萬善故圯圮陋不可居。師誅葺其中，有終焉之意。既得臨濟宗傳，道行益高。天童有僧數百人，羣欲保師。師以天童為東南名剎，既遭水災，時人又唱言廢佛，日益亟，乃入主天童。天童寧謐如故，其興七塔之功為尤多。紺宮妙相，極莊嚴於廢敗間。而臨濟之教，造就無算；玉忠等四十八人名尤著，宗風被海內外矣。而四明天童、育王、觀宗、雪竇、施祥、接待、總持、龍聖、看經、德雲、大靈隱等大小數十百寺，其主僧迄於今，大抵師之門弟子也。贊曰：余未嘗見師，而與師門弟子圓瑛、智圓、覺圓、常西、溥常、僧晉及本舟、寶靜、指南輩往還聞道。其師未棄家時，嘗販米，過洞庭湖；湖中盜劫持之，欲與昆弟盟。師從容開說，盜皆感泣，卒為良民。既主七塔，數數歸湘潭，省父母墳墓。其季佑琳讀書能文。余觀佑琳所為頌師八十文，其篤於父子兄弟間，為尤可慕也。嗚呼！有為者，不擇地而成。若師之建樹，尚得以空門寂滅而視之哉？</Paragraph>
+				
+
+                <MetaTags NoIndex="0">
+					<Udef_HotZoneCattree>4杭州/g013七塔寺志</Udef_HotZoneCattree>
+					<Udef_DocSource>g013七塔寺志</Udef_DocSource>
+                    
+					<Udef_HotZone>4杭州</Udef_HotZone>
+					<Udef_SourceCategoryCattree>g013七塔寺志/七塔寺志卷之五/志僧譜</Udef_SourceCategoryCattree>
+<Udef_SourceCategoryCattree>g013七塔寺志/七塔寺志卷之五/志僧譜</Udef_SourceCategoryCattree>
+					<Udef_Cult></Udef_Cult>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="A019100">
+            <corpus>佛寺志人物傳記</corpus>
+            <compilation_vol>1</compilation_vol>
+            <title>錢若水</title>
+            <geo_level2>新安</geo_level2>
+            <geo_longitude>112.1534</geo_longitude>
+            <geo_latitude>34.7324</geo_latitude>
+            <geo_level3></geo_level3>
+            <timeseq_not_before>0960</timeseq_not_before>
+            <timeseq_not_after>1003</timeseq_not_after>
+            <xml_metadata>
+                <Udef_Biographs>1</Udef_Biographs>
+                <Udef_DocSource>g015大昭慶律寺志</Udef_DocSource>
+                <Udef_AlternativeNames>淡成;長卿;錢宣靖;錢澹成</Udef_AlternativeNames>
+                <Udef_Dynasty>北宋</Udef_Dynasty>
+                <Udef_HotZone>4杭州</Udef_HotZone>
+                <Udef_Hometown>新安</Udef_Hometown>
+                <Udef_PlaceDeceased></Udef_PlaceDeceased>
+				<Udef_SourceCategory1>g015大昭慶律寺志/大昭慶律寺志卷之五/淨社/十八高賢/同知樞密院事長城錢若水</Udef_SourceCategory1>
+                <Udef_Cult></Udef_Cult>
+            </xml_metadata>
+            <time_dynasty>北宋</time_dynasty>
+            <compilation_name>1</compilation_name>			
+
+            <doc_content>
+				<Paragraph Key="A019100_000" Type="傳主" Title="傳主"><PersonName Term="錢若水" RefId="dila_A019100">錢若水</PersonName></Paragraph>
+				<Paragraph Key="A019100_001" Type="籍貫" Title="籍貫"><Udef_NativePlace Term="新安" PlaceRefId="dila_PL000000023726">新安</Udef_NativePlace></Paragraph>
+				
+				<Paragraph Key="A019100_g015_1" Type="來源寺志" Title="來源寺志">g015<LocName Term="g015大昭慶律寺志" RefId="dila_PL000000011463" DocuSkyAuth="@BTB::{g015}">g015大昭慶律寺志</LocName>：大昭慶律寺志卷之五/淨社/十八高賢/同知樞密院事長城錢若水</Paragraph>
+<Paragraph Key="A019100_g015_1" Type="寺志內容" Title="寺志內容">錢若水，字澹成，河南新安人。登進士，至道初，以右諫議大夫同知樞密院事(〈記〉云在密地日)。真宗即位，加工部侍郎(〈記〉云貳卿)。官終知天雄軍兼兵馬部署、巡撫陝西緣邊諸郡并州事。卒，贈戶部尚書。公輕財好施，知兵，有器識，汲引士類，為時名臣。</Paragraph>
+				
+
+                <MetaTags NoIndex="0">
+					<Udef_HotZoneCattree>4杭州/g015大昭慶律寺志</Udef_HotZoneCattree>
+					<Udef_DocSource>g015大昭慶律寺志</Udef_DocSource>
+                    
+					<Udef_HotZone>4杭州</Udef_HotZone>
+					<Udef_SourceCategoryCattree>g015大昭慶律寺志/大昭慶律寺志卷之五/淨社/十八高賢/同知樞密院事長城錢若水</Udef_SourceCategoryCattree>
+					<Udef_Cult></Udef_Cult>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+        <document filename="g001">
+            <corpus>@佛寺志書目</corpus>
+            <title>g001洛陽伽藍記</title>
+            <book_code>g001</book_code>
+            <geo_longitude>112.619823</geo_longitude>
+            <geo_latitude>34.721543</geo_latitude>
+            <time_dynasty>民國</time_dynasty>
+            <year_for_grouping>1936</year_for_grouping>
+            <author>楊衒之;張元濟</author>
+            <doctype>總志</doctype>
+            <xml_metadata>
+                <Udef_Title>
+                    <a
+                        href="http://buddhistinformatics.dila.edu.tw/fosizhi/ui.html?book=g001"
+						target="_blank">g001洛陽伽藍記</a>
+                </Udef_Title>
+                <Udef_Dynasty_Writing>民國</Udef_Dynasty_Writing>
+                <Udef_Year_Writing>1936</Udef_Year_Writing>
+                <Udef_Dynasty_Issue>民國</Udef_Dynasty_Issue>
+                <Udef_Year_Issue>1936</Udef_Year_Issue>
+                <Udef_Doctype>總志</Udef_Doctype>
+                <author>
+                    <PersonName RefId="A001444">楊衒之</PersonName>;<PersonName RefId="A023332">張元濟</PersonName>
+                </author>
+                <Geo>2河南</Geo>
+            </xml_metadata>
+            <timeseq_not_before>0</timeseq_not_before>
+            <timeseq_not_after>0</timeseq_not_after>
+            <docclass>2河南</docclass>
+            <doc_content>
+                <Paragraph>「武帝五年（五四七），楊衒之行役洛陽，感念廢興，乃捃拾舊聞，追述故蹟，以撰《洛陽伽藍記》。是記以城內及四門之外，分敍五篇……是書今所傳者，以明如隱堂刋本為最早，是本卷二闕第四、第九、第十八等三葉，均寫補，世間存本無不皆然。民國二十五年（一九三六）上海涵芬樓據此本影印，編入「四部叢刋」三編。時張元濟取此本與吳若準集證本互校，得校勘記一卷。茲據四部叢刋本景印，並以吳若準集證本、唐晏鉤沈本、張宗祥合校本附於後。」(《洛陽伽藍記．[版本說明]》，頁f7)「魏撫軍府司馬楊衒之撰……至武定五年，歲在丁卯，余因行役，重覽洛陽，城郭崩毀，宮室傾覆，寺觀灰燼，廟塔丘墟……凡有一千餘寺，今日寮廓，鍾聲罕聞，恐後世無傳，故撰斯記。……先以城內為始，次及城外，表列門名，以遠近為五篇。……」(《洛陽伽藍記．卷前．洛陽伽藍記序》，頁0003 ~ 頁0005)「洛陽伽藍記，隋唐以下著錄均五卷，惟宋史藝文志郡齋讀書志作三卷，連江陳氏世善堂書目亦同。或原有別本，今已失傳。近世存者，以如隱堂本為最古。其刊版當在明代嘉隆之際……錢塘吳若準重為編次……成集證一卷，世稱善本。……余取以對勘……中華民國二十五年春三月海鹽張元濟」(《洛陽伽藍記．卷5．跋》，頁0207 ~ 頁0208)</Paragraph>
+                <MetaTags NoIndex="0">
+					<Udef_AuthorBackground>登科</Udef_AuthorBackground>
+<Udef_AuthorBackground>任官</Udef_AuthorBackground>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="g002">
+            <corpus>@BTB</corpus>
+            <title>g002洛陽伽藍記集證</title>
+            <book_code>g002</book_code>
+            <geo_longitude>112.619823</geo_longitude>
+            <geo_latitude>34.721543</geo_latitude>
+            <time_dynasty>清</time_dynasty>
+            <year_for_grouping>1833</year_for_grouping>
+            <author>楊衒之;吳若準</author>
+            <doctype>總志</doctype>
+            <xml_metadata>
+                <Udef_Title>
+                    <a
+                        href="http://buddhistinformatics.dila.edu.tw/fosizhi/ui.html?book=g002"
+						target="_blank">g002洛陽伽藍記集證</a>
+                </Udef_Title>
+                <Udef_Dynasty_Writing>清</Udef_Dynasty_Writing>
+                <Udef_Year_Writing>1833</Udef_Year_Writing>
+                <Udef_Dynasty_Issue>清</Udef_Dynasty_Issue>
+                <Udef_Year_Issue>1834</Udef_Year_Issue>
+                <Udef_Doctype>總志</Udef_Doctype>
+                <author>
+                    <PersonName RefId="A001444">楊衒之</PersonName>;<PersonName RefId="A043730">吳若準</PersonName>
+                </author>
+                <Geo>2河南</Geo>
+            </xml_metadata>
+            <timeseq_not_before>0</timeseq_not_before>
+            <timeseq_not_after>0</timeseq_not_after>
+            <docclass>2河南</docclass>
+            <doc_content>
+                <Paragraph>「貲貴又以此語其娚吳若準，若準於暇日流覽衒之此書，意存復古，重為分析，所據者明如隱堂本，所參考者為何氏、毛氏校本，……成「集證」一卷，附於書後；復繪圖一幅，冠於書前。書成于道光十三年（一八三三），刋于十四年（一八三四）。……伽藍記五卷……末所附之集證，除依別本校正文句外，更兼採他書以作校證。……其後乃有唐宴鉤沈、張宗祥合校本出……玆據道光十四年校刻本景印。」(《洛陽伽藍記集證．[版本說明]》，頁f2)「至武定五年，歲在丁卯，余因行役，重覽洛陽，……凡有一千餘寺，今日寥廓，鐘聲䍐聞，恐後世無傳，故譔斯記。……表列門名，以遠近為五篇。」(《洛陽伽藍記集證．卷前．洛陽伽藍記序》，頁0225)「重為分析。……圖一篇，集證一卷，附於簡端卷末。……道光十三年十二月既望，錢塘吳若準自序」(《洛陽伽藍記集證．卷前．序》，頁0227)「吳甥次平……兼治此書。歲籥一周，定本遂出。大略所據者如隱堂本，所參考者何氏、毛氏本，……繫成集證一卷，復繪圖一篇，列諸簡端。……道光甲午三月朔日，長興朱紫貴書于吳門楓江草堂」(《洛陽伽藍記集證．卷5．[跋]》，頁0261)</Paragraph>
+                <MetaTags NoIndex="0">
+					<Udef_AuthorBackground>登科</Udef_AuthorBackground>
+<Udef_AuthorBackground>任官</Udef_AuthorBackground>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="g003">
+            <corpus>@佛寺志書目</corpus>
+            <title>g003洛陽伽藍記鉤沉</title>
+            <book_code>g003</book_code>
+            <geo_longitude>112.619823</geo_longitude>
+            <geo_latitude>34.721543</geo_latitude>
+            <time_dynasty>民國</time_dynasty>
+            <year_for_grouping>1917</year_for_grouping>
+            <author>楊衒之;唐晏</author>
+            <doctype>總志</doctype>
+            <xml_metadata>
+                <Udef_Title>
+                    <a
+                        href="http://buddhistinformatics.dila.edu.tw/fosizhi/ui.html?book=g003"
+						target="_blank">g003洛陽伽藍記鉤沉</a>
+                </Udef_Title>
+                <Udef_Dynasty_Writing>民國</Udef_Dynasty_Writing>
+                <Udef_Year_Writing>1917</Udef_Year_Writing>
+                <Udef_Dynasty_Issue>民國</Udef_Dynasty_Issue>
+                <Udef_Year_Issue>1917</Udef_Year_Issue>
+                <Udef_Doctype>總志</Udef_Doctype>
+                <author>
+                    <PersonName RefId="A001444">楊衒之</PersonName>;<PersonName RefId="A043731">唐晏</PersonName>
+                </author>
+                <Geo>2河南</Geo>
+            </xml_metadata>
+            <timeseq_not_before>0</timeseq_not_before>
+            <timeseq_not_after>0</timeseq_not_after>
+            <docclass>2河南</docclass>
+            <doc_content>
+                <Paragraph>「唯吳本正文太簡，子注過繁，其所分析疑與楊記舊觀相去甚遠，唐晏因是有「洛陽伽藍記鉤沈」之作。……民國四年（一九一五）避居滬上，因嫌吳氏集證……成此「鉤沈」一編。……吳氏集證附圖，亦為改訂，仍冠篇首。……唐氏鉤沈上繼吳氏集證而作，下啟張氏合校本出，因據民國六年潮陽鄭氏刋本景印。因係僅供學者比閱，故《集證》與《鉤沈》兩本，皆以四合一縮印之。」(《洛陽伽藍記鉤沉．[版本說明]》，頁f2)「鄙人索居海上，偶展此書，覺有會於心，乃信手鉤乙，數則以後，迎刃而解，都已盡卷。……吳氏書有圖一紙，而小有未合，今改訂而仍以冠於其首焉。乙卯(民國四年)春二月漯川居士唐晏敘於海上飛塵小住」 (《洛陽伽藍記鉤沉．卷前．洛陽伽藍記鉤沈序》，頁0273)：「魏撫軍府司馬楊衒之譔。……至武定五年，歲在丁卯，余因行役，重覽洛陽，……京城表裏，凡有一千餘寺，……恐後世無傳，故撰斯記。」(《洛陽伽藍記鉤沉．卷1．原序》，頁0274)</Paragraph>
+                <MetaTags NoIndex="0">
+					<Udef_AuthorBackground>登科</Udef_AuthorBackground>
+<Udef_AuthorBackground>任官</Udef_AuthorBackground>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="g004">
+            <corpus>@佛寺志書目</corpus>
+            <title>g004洛陽伽藍記合校本</title>
+            <book_code>g004</book_code>
+            <geo_longitude>112.619823</geo_longitude>
+            <geo_latitude>34.721543</geo_latitude>
+            <time_dynasty>民國</time_dynasty>
+            <year_for_grouping>1930</year_for_grouping>
+            <author>楊衒之;張宗祥</author>
+            <doctype>總志</doctype>
+            <xml_metadata>
+                <Udef_Title>
+                    <a
+                        href="http://buddhistinformatics.dila.edu.tw/fosizhi/ui.html?book=g004"
+						target="_blank">g004洛陽伽藍記合校本</a>
+                </Udef_Title>
+                <Udef_Dynasty_Writing>民國</Udef_Dynasty_Writing>
+                <Udef_Year_Writing>1930</Udef_Year_Writing>
+                <Udef_Dynasty_Issue>民國</Udef_Dynasty_Issue>
+                <Udef_Year_Issue>1955</Udef_Year_Issue>
+                <Udef_Doctype>總志</Udef_Doctype>
+                <author>
+                    <PersonName RefId="A001444">楊衒之</PersonName>;<PersonName RefId="A043732">張宗祥</PersonName>
+                </author>
+                <Geo>2河南</Geo>
+            </xml_metadata>
+            <timeseq_not_before>0</timeseq_not_before>
+            <timeseq_not_after>0</timeseq_not_after>
+            <docclass>2河南</docclass>
+            <doc_content>
+                <Paragraph>民國四十四年（一九五五）商務印書館影印</Paragraph>
+                <MetaTags NoIndex="0">
+					<Udef_AuthorBackground>登科</Udef_AuthorBackground>
+<Udef_AuthorBackground>文人雅士</Udef_AuthorBackground>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="g005">
+            <corpus>@佛寺志書目</corpus>
+            <title>g005南朝佛寺志</title>
+            <book_code>g005</book_code>
+            <geo_longitude>118.826177</geo_longitude>
+            <geo_latitude>31.99306</geo_latitude>
+            <time_dynasty>清</time_dynasty>
+            <year_for_grouping>1891</year_for_grouping>
+            <author>孫文川;陳作霖</author>
+            <doctype>總志</doctype>
+            <xml_metadata>
+                <Udef_Title>
+                    <a
+                        href="http://buddhistinformatics.dila.edu.tw/fosizhi/ui.html?book=g005"
+						target="_blank">g005南朝佛寺志</a>
+                </Udef_Title>
+                <Udef_Dynasty_Writing>清</Udef_Dynasty_Writing>
+                <Udef_Year_Writing>1891</Udef_Year_Writing>
+                <Udef_Dynasty_Issue>清</Udef_Dynasty_Issue>
+                <Udef_Year_Issue>1891</Udef_Year_Issue>
+                <Udef_Doctype>總志</Udef_Doctype>
+                <author>
+                    <PersonName RefId="A043745">孫文川</PersonName>;<PersonName RefId="A043747">陳作霖</PersonName>
+                </author>
+                <Geo>3南京</Geo>
+            </xml_metadata>
+            <timeseq_not_before>0</timeseq_not_before>
+            <timeseq_not_after>0</timeseq_not_after>
+            <docclass>3南京</docclass>
+            <doc_content>
+                <Paragraph>「南朝佛寺志，二卷，〔清〕孫文川撰、陳作霖編，清末上元孫氏原刊本。」(《南朝佛寺志．[書名頁]》《中國佛寺史志彙刊》，第1輯，第2冊，頁f6)「清上元孫文川（字伯澂），乃蒐采南朝諸書，考稽南朝佛寺，未及排葺，而遽歸道山，其遺稿歸劉世珩（聚卿），陳作霖（伯雨）見而好之，遂為補葺，加以訂正，間有辨駁，即注其下，勒為定本，即此「南朝佛寺志」上下兩卷也。……茲據國立中央圖書館所藏清末上元孫氏原刋本景印。」 (《南朝佛寺志．[版本說明]》，頁f7)「南朝佛寺志／劉文熾署」(《南朝佛寺志．[題名頁]》，頁0001)「是編為上元孫伯澂先生所蒐采，未及排葺，而遽歸道山。其遺稿在貴池劉聚卿觀察處，作霖見面索得之，於叢殘蠹蝕中，編纂成帙，閒有辨駁，即注其下……閱五月而告竣。」(《南朝佛寺志．卷前．凡例》，頁0003)「上元孫文川（伯澂）葺述／江甯陳作霖（伯雨）編纂」(《南朝佛寺志．卷1．南朝佛寺志卷上》，頁0011)「同治上江縣志」(《南朝佛寺志．卷2．虎窟寺》，頁0280)「辛卯秋．收得上元孫丈澂之文川故書．中有金陵六朝古寺考二册．乃丈同治初元客京師賢良寺時隨手所錄。……有傳伯雨已刻此書．亟索觀之．則一仍孫氏之舊。……光緒三十有三年太歲在丁未秋九月十有九日．貴池劉世珩識於京邸十五幢亭」(《南朝寺考．卷前．南朝寺考序》，《中國佛寺史志彙刊》，第2輯，第2冊，頁0005~ 0006)</Paragraph>
+                <MetaTags NoIndex="0">
+					<Udef_AuthorBackground>登科</Udef_AuthorBackground>
+<Udef_AuthorBackground>任官</Udef_AuthorBackground>
+<Udef_AuthorBackground>文人雅士</Udef_AuthorBackground>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="g006">
+            <corpus>@佛寺志書目</corpus>
+            <title>g006金陵梵剎志</title>
+            <book_code>g006</book_code>
+            <geo_longitude>118.803916</geo_longitude>
+            <geo_latitude>32.041413</geo_latitude>
+            <time_dynasty>明</time_dynasty>
+            <year_for_grouping>1607</year_for_grouping>
+            <author>葛寅亮</author>
+            <doctype>總志</doctype>
+            <xml_metadata>
+                <Udef_Title>
+                    <a
+                        href="http://buddhistinformatics.dila.edu.tw/fosizhi/ui.html?book=g006"
+						target="_blank">g006金陵梵剎志</a>
+                </Udef_Title>
+                <Udef_Dynasty_Writing>明</Udef_Dynasty_Writing>
+                <Udef_Year_Writing>1607</Udef_Year_Writing>
+                <Udef_Dynasty_Issue>民國</Udef_Dynasty_Issue>
+                <Udef_Year_Issue>1936</Udef_Year_Issue>
+                <Udef_Doctype>總志</Udef_Doctype>
+                <author>
+                    <PersonName RefId="A004190">葛寅亮</PersonName>
+                </author>
+                <Geo>3南京</Geo>
+            </xml_metadata>
+            <timeseq_not_before>0</timeseq_not_before>
+            <timeseq_not_after>0</timeseq_not_after>
+            <docclass>3南京</docclass>
+            <doc_content>
+                <Paragraph>「五十三卷，〔明〕葛寅亮撰，民國廿五年（一九三六）金山江天寺景明萬曆三十五年（一六〇七）南京僧錄司刋天啓七年（一六二七年）補刊序文本。金陵梵刹志」(《金陵梵剎志．[書名頁]》，頁f2) 「明萬曆間，葛寅亮乃撰《金陵梵剎志》，得卷五十三。……此書於明萬曆三十五年南京僧錄司始刋，天啟七年補刋序文。民國二十五年金山江天寺以所藏本，配補江蘇國學圖書館藏本，所缺者經丹徒尹石公居士雜取明代集部鈔補之，由濮一乘居士總校，成為完本，付之影印，茲據此影印本景印。」(《金陵梵剎志．[版本說明]》，頁f4)「金陵梵剎志五十三卷／民國廿五年十月金山江天寺景印」(《金陵梵剎志．[題名頁]》，頁0001 ~ 頁0002)「賜進士第．承德郎．南京禮部祠祭清吏司主事．建德鄭三俊(A008618)撰」(《金陵梵剎志．卷53．金陵梵剎志後序》，頁1893)「右金陵梵剎志五十三卷，明錢塘葛寅亮纂。清光緒末年濟南禪師領眾金陵，淂之於無意……付其門人智隱和尚，因以貯之。金山付惟光守之有年矣，甞欲施諸棃棗，顧以事重難舉逡巡，未果世變，日亟衰老，駸至大，懼其自我而湮没也。乃付上海影印為干部，以詒當世。其原書間有殘缺丹徒栁翼謀居士，以國學圖書館所藏者校補之。抑有兩部缺葉相同者，由丹徒尹石公居士襍取明代集部鈔補之，而溧水濮一乘居士復總校一過，其書始獲完整。……中華民國二十五年十月霜亭惟光謹識于金山江天寺之楞伽丈室」《金陵梵剎志．卷53．[後序]》(《中國佛寺史志彙刊》，第1輯，第6冊，頁1895 ~ 頁1900)</Paragraph>
+                <MetaTags NoIndex="0">
+					<Udef_AuthorBackground>登科</Udef_AuthorBackground>
+<Udef_AuthorBackground>任官</Udef_AuthorBackground>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="g007">
+            <corpus>@佛寺志書目</corpus>
+            <title>g007武林梵志</title>
+            <book_code>g007</book_code>
+            <geo_longitude>120.047811</geo_longitude>
+            <geo_latitude>30.260176</geo_latitude>
+            <time_dynasty>明</time_dynasty>
+            <year_for_grouping>1609</year_for_grouping>
+            <author>吳之鯨</author>
+            <doctype>總志</doctype>
+            <xml_metadata>
+                <Udef_Title>
+                    <a
+                        href="http://buddhistinformatics.dila.edu.tw/fosizhi/ui.html?book=g007"
+						target="_blank">g007武林梵志</a>
+                </Udef_Title>
+                <Udef_Dynasty_Writing>明</Udef_Dynasty_Writing>
+                <Udef_Year_Writing>1609</Udef_Year_Writing>
+                <Udef_Dynasty_Issue>清</Udef_Dynasty_Issue>
+                <Udef_Year_Issue>1780</Udef_Year_Issue>
+                <Udef_Doctype>總志</Udef_Doctype>
+                <author>
+                    <PersonName RefId="A022597">吳之鯨</PersonName>
+                </author>
+                <Geo>4杭州</Geo>
+            </xml_metadata>
+            <timeseq_not_before>0</timeseq_not_before>
+            <timeseq_not_after>0</timeseq_not_after>
+            <docclass>4杭州</docclass>
+            <doc_content>
+                <Paragraph>「十二卷［明］吳之鯨撰清乾隆四十五年（一七八〇）欽定四庫全書抄本武林梵志」(《武林梵志．[書名頁]》，頁f2)「明、吳之鯨以南宋武林梵剎至明而殘廢者多，……撰《武林梵志》。……是編分卷十二……茲據四庫全書本景印。」(《武林梵志．[版本說明]》，頁f3)「臣等謹案武林梵志十二卷，明吳之鯨撰之。……乾隆四十五年三月恭校上／總纂官臣紀昀臣陸錫熊臣孫士毅／總校官臣陸費墀」 (《武林梵志．卷前．欽定四庫全書．史部十一．地理類七．古蹟之屬．武林梵志．提要》，頁0003 ~ 頁0006)</Paragraph>
+                <MetaTags NoIndex="0">
+					<Udef_AuthorBackground>登科</Udef_AuthorBackground>
+<Udef_AuthorBackground>任官</Udef_AuthorBackground>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="g008">
+            <corpus>@佛寺志書目</corpus>
+            <title>g008重修普陀山志</title>
+            <book_code>g008</book_code>
+            <geo_longitude>122.387434</geo_longitude>
+            <geo_latitude>29.993064</geo_latitude>
+            <time_dynasty>明</time_dynasty>
+            <year_for_grouping>1607</year_for_grouping>
+            <author>周應賓</author>
+            <doctype>寺志</doctype>
+            <xml_metadata>
+                <Udef_Title>
+                    <a
+                        href="http://buddhistinformatics.dila.edu.tw/fosizhi/ui.html?book=g008"
+						target="_blank">g008重修普陀山志</a>
+                </Udef_Title>
+                <Udef_Dynasty_Writing>明</Udef_Dynasty_Writing>
+                <Udef_Year_Writing>1607</Udef_Year_Writing>
+                <Udef_Dynasty_Issue>明</Udef_Dynasty_Issue>
+                <Udef_Year_Issue>1607</Udef_Year_Issue>
+                <Udef_Doctype>寺志</Udef_Doctype>
+                <author>
+                    <PersonName RefId="A006952">周應賓</PersonName>
+                </author>
+                <Geo>4杭州</Geo>
+            </xml_metadata>
+            <timeseq_not_before>0</timeseq_not_before>
+            <timeseq_not_after>0</timeseq_not_after>
+            <docclass>4杭州</docclass>
+            <doc_content>
+                <Paragraph>「記錄普陀者，舊有元龜茲盛熙明撰《補陀洛迦山傳》，今存一卷；明侯繼高始撰山志，惜未通行。至萬曆間，周應賓以《侯志》重山而略於寺，乃為重修，釐為六卷，……是志刋於萬曆間，流通不廣，民國十二年（一九二三）王亨彥修新志時亦不得見。茲據國立中央圖書館代管北平圖書館所藏明萬曆三十五年（一六〇七）太監張隨原刋本景印。」(《重修普陀山志．[版本說明]》，頁f3)「萬曆丁未四月既望，東海外史周應賓識寅」(《重修普陀山志．卷前．重修普陀志叙》，頁0006)「則有若周少宰、屠儀部、沈符卿，或紀其形勝，或闡其密藏，或勒之𤦹珉，或形之歌咏。……而校讐之役，則屠生與有力焉。……萬曆丁未孟夏，賜進士第定海令椘潛樊王家撰」(《重修普陀山志．卷前．補陀山志序》，頁0010 ~ 頁0012)「成志者，寺僧性能也，併書之。邑人邵輔忠撰」(《重修普陀山志．卷前．重鋟補陀志序》，頁0020)「性能  字守拙，揚之通州人，請度本寺。二十三年府縣帖，僉充一山總管，大小僧務皆属主之，仍恊理寺事。勑建之後，復[𠷰=圖]志乘以垂永久。總管之設，自此始焉。」(《重修普陀山志．卷2．釋子‧性能》，頁0180)</Paragraph>
+                <MetaTags NoIndex="0">
+					<Udef_AuthorBackground>登科</Udef_AuthorBackground>
+<Udef_AuthorBackground>任官</Udef_AuthorBackground>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="g009">
+            <corpus>@佛寺志書目</corpus>
+            <title>g009普陀洛迦新志</title>
+            <book_code>g009</book_code>
+            <geo_longitude>122.387434</geo_longitude>
+            <geo_latitude>29.993064</geo_latitude>
+            <time_dynasty>民國</time_dynasty>
+            <year_for_grouping>1924</year_for_grouping>
+            <author>王亨彦</author>
+            <doctype>寺志</doctype>
+            <xml_metadata>
+                <Udef_Title>
+                    <a
+                        href="http://buddhistinformatics.dila.edu.tw/fosizhi/ui.html?book=g009"
+						target="_blank">g009普陀洛迦新志</a>
+                </Udef_Title>
+                <Udef_Dynasty_Writing>民國</Udef_Dynasty_Writing>
+                <Udef_Year_Writing>1924</Udef_Year_Writing>
+                <Udef_Dynasty_Issue>民國</Udef_Dynasty_Issue>
+                <Udef_Year_Issue>1924</Udef_Year_Issue>
+                <Udef_Doctype>寺志</Udef_Doctype>
+                <author>
+                    <PersonName RefId="A008920">王亨彦</PersonName>
+                </author>
+                <Geo>4杭州</Geo>
+            </xml_metadata>
+            <timeseq_not_before>0</timeseq_not_before>
+            <timeseq_not_after>0</timeseq_not_after>
+            <docclass>4杭州</docclass>
+            <doc_content>
+                <Paragraph>「《普陀山志》自明萬曆間周應賓重修以還，有清一代，新志疊出，可考者凡有四本：一、康熙三十七年（一六九八）裘璉編十五卷本；二、康熙四十四年（一七〇五）朱謹、陳璿增修十五卷本；三、乾隆四年（一七三九）許琰重修二十卷本；四、道光十二年（一八三二）秦耀曾重修二十卷本。……民國初年，時釋印光主法雨寺，因病舊志所載，……加以舊志流通不廣，乃有意重修。……十二年（一九二三），乃由定海知事陶鏞託邑紳王亨彦任重修之事；又以大士頌託諸江西彭澤許止浄居士。次年書成，為卷十二，首又一卷。……茲據民國十三年（一九二四）排印本景印。」(《普陀洛迦新志．[版本說明]》，頁f3)「《普陀山志》自清康熙迄道光，凡三修焉。今相距僅百年，開如、了餘兩師，獨發弘願，延邑儒王雅三學博從事纂修。……中華民國十二年冬，勳三位一等文虎章．一等大綬嘉禾章．雲威將軍上將銜陸軍中將．農商總長．騰衝李根源謹序」(《普陀洛迦新志．卷前．序一》，頁0004 ~ 頁0005)「正文并註，共三卷，後附經證一卷。脫稿即呈印師鑑定，蒙許可後，乃敢作為定本。……民國十三年甲子孟夏，彭澤許止淨述」(《普陀洛迦新志．卷前．序二此序專說撰本迹頌之緣起》，頁0008)「印光法師……以普陀舊志，皆於大士本迹感應，未曾發揮。……擬將大藏大士本迹，及此方感應，撰為頌詞，并一一注其義意。又輯諸經大士本迹諸事，以為證據。……以力不暇及，乃託摯友許止淨居士撰之。幸已脫稿，擬欲排印數萬……民國十三年甲子仲夏，上海黃慶瀾序於會稽道署」(《普陀洛迦新志．卷前．序三》，頁0010)「十一年春，定海知事陶在東公來山，謂山志流通，令人由信向而改惡遷善……乃託邑紳王雅三君任之。……初於修志議成之後，未及一月，江西彭澤許止淨居士來訪，……遂以〈大士頌〉見託，彼即允許。……時經二載，稿方告竣。述成頌文，近二萬言……又節錄各經以為明證，頌文三卷，經證一卷……光昔本欲冠於山志之首，今以卷帙繁多，特為別行。……後以陶公見頌文超妙，謂須冠於志首，乃刪其注語及經證等，僅錄正文，統作一卷，名〈本迹門〉，為卷一。……民國十三年甲子中秋日，古莘印光釋聖量謹撰」(《普陀洛迦新志．卷前．序四》，頁0012 ~ 頁0013)「因石印山志，以廣其傳，……民國八年，釋印光撰」(《普陀洛迦新志．卷前．石印普陀山志序 附錄》，頁0016 ~ 頁0017)</Paragraph>
+                <MetaTags NoIndex="0">
+					<Udef_AuthorBackground>文人雅士</Udef_AuthorBackground>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="g010">
+            <corpus>@佛寺志書目</corpus>
+            <title>g010明州阿育王山志</title>
+            <book_code>g010</book_code>
+            <geo_longitude>121.738838</geo_longitude>
+            <geo_latitude>29.849452</geo_latitude>
+            <time_dynasty>明</time_dynasty>
+            <year_for_grouping>1618</year_for_grouping>
+            <author>郭子章</author>
+            <doctype>寺志</doctype>
+            <xml_metadata>
+                <Udef_Title>
+                    <a
+                        href="http://buddhistinformatics.dila.edu.tw/fosizhi/ui.html?book=g010"
+						target="_blank">g010明州阿育王山志</a>
+                </Udef_Title>
+                <Udef_Dynasty_Writing>明</Udef_Dynasty_Writing>
+                <Udef_Year_Writing>1618</Udef_Year_Writing>
+                <Udef_Dynasty_Issue>清</Udef_Dynasty_Issue>
+                <Udef_Year_Issue>1757</Udef_Year_Issue>
+                <Udef_Doctype>寺志</Udef_Doctype>
+                <author>
+                    <PersonName RefId="A007230">郭子章</PersonName>
+                </author>
+                <Geo>4杭州</Geo>
+            </xml_metadata>
+            <timeseq_not_before>0</timeseq_not_before>
+            <timeseq_not_after>0</timeseq_not_after>
+            <docclass>4杭州</docclass>
+            <doc_content>
+                <Paragraph>「明萬曆年間，泰和郭子章撰《明州阿育王山志》，因《普陀山志》例，條以義類，立以十門，門說四偈，門門各為一卷。……至清乾隆年間，住山釋畹荃復輯其藝文，纂「續志」，釐為六卷，未分門類，所錄藝文，略按時代先後為序，末卷錄有「先覺考」，所以補郭志之遺也。乾隆二十二年以正續合刻，都十六卷。兹據中央圖書館藏清乾隆二十二年（一七五七）正續合刊本景印。」(《明州阿育王山志．[版本說明]》，頁f3)</Paragraph>
+                <MetaTags NoIndex="0">
+					<Udef_AuthorBackground>登科</Udef_AuthorBackground>
+<Udef_AuthorBackground>任官</Udef_AuthorBackground>
+<Udef_AuthorBackground>文人雅士</Udef_AuthorBackground>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="g011">
+            <corpus>@佛寺志書目</corpus>
+            <title>g011明州阿育王山續志</title>
+            <book_code>g011</book_code>
+            <geo_longitude>121.738838</geo_longitude>
+            <geo_latitude>29.849452</geo_latitude>
+            <time_dynasty>清</time_dynasty>
+            <year_for_grouping>1757</year_for_grouping>
+            <author>釋畹荃</author>
+            <doctype>寺志</doctype>
+            <xml_metadata>
+                <Udef_Title>
+                    <a
+                        href="http://buddhistinformatics.dila.edu.tw/fosizhi/ui.html?book=g011"
+						target="_blank">g011明州阿育王山續志</a>
+                </Udef_Title>
+                <Udef_Dynasty_Writing>清</Udef_Dynasty_Writing>
+                <Udef_Year_Writing>1757</Udef_Year_Writing>
+                <Udef_Dynasty_Issue>清</Udef_Dynasty_Issue>
+                <Udef_Year_Issue>1757</Udef_Year_Issue>
+                <Udef_Doctype>寺志</Udef_Doctype>
+                <author>
+                    <PersonName RefId="A007237">釋畹荃</PersonName>
+                </author>
+                <Geo>4杭州</Geo>
+            </xml_metadata>
+            <timeseq_not_before>0</timeseq_not_before>
+            <timeseq_not_after>0</timeseq_not_after>
+            <docclass>4杭州</docclass>
+            <doc_content>
+                <Paragraph>「明萬曆年間，泰和郭子章撰《明州阿育王山志》，因《普陀山志》例，條以義類，立以十門，門說四偈，門門各為一卷。……至清乾隆年間，住山釋畹荃復輯其藝文，纂「續志」，釐為六卷，未分門類，所錄藝文，略按時代先後為序，末卷錄有「先覺考」，所以補郭志之遺也。乾隆二十二年以正續合刻，都十六卷。兹據中央圖書館藏清乾隆二十二年（一七五七）正續合刊本景印。」(《明州阿育王山志．[版本說明]》，頁f3) （g010）</Paragraph>
+                <MetaTags NoIndex="0">
+					<Udef_AuthorBackground>僧人</Udef_AuthorBackground>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="g012">
+            <corpus>@佛寺志書目</corpus>
+            <title>g012天童寺志</title>
+            <book_code>g012</book_code>
+            <geo_longitude>121.790772</geo_longitude>
+            <geo_latitude>29.80678</geo_latitude>
+            <time_dynasty>清</time_dynasty>
+            <year_for_grouping>1808</year_for_grouping>
+            <author>聞性道;釋德介</author>
+            <doctype>寺志</doctype>
+            <xml_metadata>
+                <Udef_Title>
+                    <a
+                        href="http://buddhistinformatics.dila.edu.tw/fosizhi/ui.html?book=g012"
+						target="_blank">g012天童寺志</a>
+                </Udef_Title>
+                <Udef_Dynasty_Writing>清</Udef_Dynasty_Writing>
+                <Udef_Year_Writing>1808</Udef_Year_Writing>
+                <Udef_Dynasty_Issue>清</Udef_Dynasty_Issue>
+                <Udef_Year_Issue>1808</Udef_Year_Issue>
+                <Udef_Doctype>寺志</Udef_Doctype>
+                <author>
+                    <PersonName RefId="A043751">聞性道</PersonName>;<PersonName RefId="A012265">釋德介</PersonName>
+                </author>
+                <Geo>4杭州</Geo>
+            </xml_metadata>
+            <timeseq_not_before>0</timeseq_not_before>
+            <timeseq_not_after>0</timeseq_not_after>
+            <docclass>4杭州</docclass>
+            <doc_content>
+                <Paragraph>「清聞性道、釋德介復參稽舊志，為纂新志。……茲據清嘉慶間重刋本景印。」(《天童寺志．[版本說明]》，頁f3)「[葢=蓋]聞弘覺老人曾囑嘯堂和尚重輯之，而嘯公知惢泉聞子乃淹博會禪之士，命同弟子于石介公董其事。但二公留心已久，未成全書；而補遺正誤，詳略得宜。……得見是書十[攷=考]……郡長東海萊嵩李煦拜撰」(《天童寺志．卷前．新纂天童寺志序》，頁0007~頁0008)「鑑西惢泉聞子，同竹[𥦗=窗]介公，慨前志之未備，殫心蒐輯，積歲累時，遂與主席偉載乘公會萃而增續之。釐為十卷……郡人仇兆鰲撰」(《天童寺志．卷前．天童寺志序》，頁0012 ~ 頁0014)「而李杲堂居士嘗與吾祖弘覺國師言及《天童山志》考述未備，載在郡乘中詩文尚多遺缺，當重纂為要務。……遂舉里友聞惢泉（名性道者）……暨我嘯堂老人主院事，屢訂入山不果。……[苐=第]惢泉與介留心已久。輯未半，公有邑乘之役。及告終，未幾而作古人。介因承祖父之命，乃殫心窮蒐諸錄，前志未備者，覶縷而補續之。自壬申後八十年，詩文未收者，同偉兄俱略其所詳而綴拾之，以繼前人之遺蹟耳。」(釋德介《天童寺志．卷前．輯志叙繇》，頁0034)</Paragraph>
+                <MetaTags NoIndex="0">
+					<Udef_AuthorBackground>文人雅士</Udef_AuthorBackground>
+<Udef_AuthorBackground>僧人</Udef_AuthorBackground>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="g013">
+            <corpus>@佛寺志書目</corpus>
+            <title>g013七塔寺志</title>
+            <book_code>g013</book_code>
+            <geo_longitude>121.567465</geo_longitude>
+            <geo_latitude>29.864893</geo_latitude>
+            <time_dynasty>民國</time_dynasty>
+            <year_for_grouping>1937</year_for_grouping>
+            <author>陳寥士</author>
+            <doctype>寺志</doctype>
+            <xml_metadata>
+                <Udef_Title>
+                    <a
+                        href="http://buddhistinformatics.dila.edu.tw/fosizhi/ui.html?book=g013"
+						target="_blank">g013七塔寺志</a>
+                </Udef_Title>
+                <Udef_Dynasty_Writing>民國</Udef_Dynasty_Writing>
+                <Udef_Year_Writing>1937</Udef_Year_Writing>
+                <Udef_Dynasty_Issue>民國</Udef_Dynasty_Issue>
+                <Udef_Year_Issue>1937</Udef_Year_Issue>
+                <Udef_Doctype>寺志</Udef_Doctype>
+                <author>
+                    <PersonName RefId="A043752">陳寥士</PersonName>
+                </author>
+                <Geo>4杭州</Geo>
+            </xml_metadata>
+            <timeseq_not_before>0</timeseq_not_before>
+            <timeseq_not_after>0</timeseq_not_after>
+            <docclass>4杭州</docclass>
+            <doc_content>
+                <Paragraph>「民國二十四年（一九三五）溥常長老倩陳寥士居士纂修寺志。博引旁徵，成志八卷……茲據民國二十六年（一九三七）排印本景印。」(《七塔寺志．[版本說明]》，頁f3)「住持溥常上人以佛事不可不傳，故囑陳寥士居士作志以傳之。……民國二十五年丙子冬，豫章梅光羲」(《七塔寺志．卷前．七塔報恩寺志序》，頁0009 ~ 頁0010)「吾友陳子寥士……邇徇溥常上人之請，有《七塔寺志》之作。……民國二十五年(1936)三月，蕭山朱鼎煦」(《七塔寺志．卷前．七塔寺志序》，頁0010 ~ 頁0011)「民國二十四年乙亥冬，溥常長老慮及歷代祖師之言行、堪為緇素模範者，向無紀錄，人多忘之，因以纂述寺志為急務。倩陳寥士居士董其役，又得圓瑛、智圓、諦聞三法師，暨胡蒙子、趙百辛、王宇高、黃夢度、王玄冰諸居士襄助，博引旁徵，爬羅剔抉，殫精竭慮，而後成志。凡八卷，……中華民國二十五年(1936)，歲次丙子，仲冬月，皈依三寶弟子王淮琛謹撰」(《七塔寺志．卷前．七塔報恩寺志序》，頁0012)「溥常長老初膺七塔主席，即建纂志之議。……民國丙子(民國二十五年，1936)，滇南夢夢道人諦聞，書於報恩佛學院教務室」(《七塔寺志．卷前．七塔寺志序》，頁0013)「前住持溥常老和尚……乃屬其事於陳君。……民國丙子冬，不緇頭陀無住，謹序於報恩佛學院教授室」(《七塔寺志．卷前．鄞縣七塔寺志序》，頁0014 ~ 頁0015)「余不自度量，慨允佛史彙編；寺志又有邑人陳寥士居士担任。有志者事竟成，非長老之大願力，曷克臻此？茲幸寺志付印，而余之《佛史編年統紀》亦近殺青，因略述其因緣而為之序。中華民國二十五年／佛生二千九百六十三年／公元一千九百三十六年丙子春，夢度居士．江寧黃煃元謹撰」(《七塔寺志．卷前．七塔報恩禪寺志序》，頁0016)「今溥常老和尚，以寺正誌尚付缺如，思有以創之，乃聘本城陳寥士居士主其事。閱二載，誌成，……民國丙子歲孟夏月，觀宗寺式昌謹撰」(《七塔寺志．卷前．七塔寺志序》，頁0017)「溥常住此多年，蓄意已久。於民國二十四年冬，發起禪堂坐香時，已輯宗譜付梓。復以寺志商確法門諸公，幸遇陳寥士居士，乃蒙欣然贊許，總其大成。圓瑛、智圓、諦聞、趙百辛、王宇高、黃夢度、王玄冰、胡蒙子諸君，共襄斯舉。……民國二十六年仲春之月，報恩退居溥常宏鉌謹識」(《七塔寺志．卷前．七塔報恩禪寺志序》，頁0018 ~ 頁0019)「四明陳君寥士……綴輯是編，以廣宏教之旨……民國廿六年六月，番禺葉恭綽」(《七塔寺志．卷前．七塔寺志序》，頁0024)「《七塔寺志》草創伊始，溥常長老敦促至殷。不揣剪陋，幾加考量，爰訂凡例，以挈綱目。取材非宏，挂漏難免，後有述者，此其[碻>蒿]矢。乙亥(民國二十四年，1935)初霜，陳寥士識。」(《七塔寺志．卷前．七塔寺志凡例》，頁0031)</Paragraph>
+                <MetaTags NoIndex="0">
+					<Udef_AuthorBackground>任官</Udef_AuthorBackground>
+<Udef_AuthorBackground>文人雅士</Udef_AuthorBackground>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="g014">
+            <corpus>@佛寺志書目</corpus>
+            <title>g014明州岳林寺志</title>
+            <book_code>g014</book_code>
+            <geo_longitude>121.416954</geo_longitude>
+            <geo_latitude>29.687458</geo_latitude>
+            <time_dynasty>清</time_dynasty>
+            <year_for_grouping>1687</year_for_grouping>
+            <author>戴明琮</author>
+            <doctype>寺志</doctype>
+            <xml_metadata>
+                <Udef_Title>
+                    <a
+                        href="http://buddhistinformatics.dila.edu.tw/fosizhi/ui.html?book=g014"
+						target="_blank">g014明州岳林寺志</a>
+                </Udef_Title>
+                <Udef_Dynasty_Writing>清</Udef_Dynasty_Writing>
+                <Udef_Year_Writing>1687</Udef_Year_Writing>
+                <Udef_Dynasty_Issue>清</Udef_Dynasty_Issue>
+                <Udef_Year_Issue>1687</Udef_Year_Issue>
+                <Udef_Doctype>寺志</Udef_Doctype>
+                <author>
+                    <PersonName RefId="A043754">戴明琮</PersonName>
+                </author>
+                <Geo>4杭州</Geo>
+            </xml_metadata>
+            <timeseq_not_before>0</timeseq_not_before>
+            <timeseq_not_after>0</timeseq_not_after>
+            <docclass>4杭州</docclass>
+            <doc_content>
+                <Paragraph>「至清康熙十二年（一六七三）楷菴和尚入院，……楷公和尚以舊無寺志，乃請戴明琮草創。明琮於康熙二十五年（一六八六）假館吳學士家，纂輯志稿。次年（一六八七）夏初稿告竣。時澹雪居士顧岱攬勝玆寺，乃取以校定，釐為六卷……玆據國立中央圖書館藏清康熙間刋本景印。」(《明州岳林寺志．[版本說明]》，頁f3)「夫戴子葺志成，遂書此以為序。[旹=時]康熙二十有六年，歲次丁卯，六月望日，澹雪居士顧岱止菴撰江東𤔌叟顧岱[印]」(《明州岳林寺志．卷前．序》，頁0006)「丁卯，楷菴手一編示予曰：『岳林舊無志書，……是以璧城志之。』……錫山施[𠟭=則]曾（省園氏）題」(《明州岳林寺志．卷前．岳林寺志序》，頁0010 ~ 頁0012)「澹雪居士．顧岱（止菴）鑒定／奉川後學．戴明琮（璧城）纂輯」(《明州岳林寺志．卷1．明州岳林寺志卷一》，頁0021)「至丁卯夏，初稿脫方告竣。適蓉湖澹雪先生覽勝而來，……輒取而較定之，釐為六卷。……康熙丁卯(二十六年，1687)仲秋日戴明琮敬題」(《明州岳林寺志．後序》，頁0178)</Paragraph>
+                <MetaTags NoIndex="0">
+					<Udef_AuthorBackground>文人雅士</Udef_AuthorBackground>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="g015">
+            <corpus>@佛寺志書目</corpus>
+            <title>g015大昭慶律寺志</title>
+            <book_code>g015</book_code>
+            <geo_longitude>120.150819</geo_longitude>
+            <geo_latitude>30.263046</geo_latitude>
+            <time_dynasty>清</time_dynasty>
+            <year_for_grouping>1764</year_for_grouping>
+            <author>吳樹虛</author>
+            <doctype>寺志</doctype>
+            <xml_metadata>
+                <Udef_Title>
+                    <a
+                        href="http://buddhistinformatics.dila.edu.tw/fosizhi/ui.html?book=g015"
+						target="_blank">g015大昭慶律寺志</a>
+                </Udef_Title>
+                <Udef_Dynasty_Writing>清</Udef_Dynasty_Writing>
+                <Udef_Year_Writing>1764</Udef_Year_Writing>
+                <Udef_Dynasty_Issue>清</Udef_Dynasty_Issue>
+                <Udef_Year_Issue>1882</Udef_Year_Issue>
+                <Udef_Doctype>寺志</Udef_Doctype>
+                <author>
+                    <PersonName RefId="A034583">吳樹虛</PersonName>
+                </author>
+                <Geo>4杭州</Geo>
+            </xml_metadata>
+            <timeseq_not_before>0</timeseq_not_before>
+            <timeseq_not_after>0</timeseq_not_after>
+            <docclass>4杭州</docclass>
+            <doc_content>
+                <Paragraph>「乾隆二十九年（一七六四），鄉人吳樹虛以《喜日宗譜》、《大昭慶律寺輯略》為藍本，刪棄煩蕪，添增華實，別撰《大昭慶律寺志》十卷。......茲據清光緒八年（一八八二）錢塘丁氏重刋本景印。」([版本說明]，頁f3)</Paragraph>
+                <MetaTags NoIndex="0">
+					<Udef_AuthorBackground>文人雅士</Udef_AuthorBackground>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="g016">
+            <corpus>@佛寺志書目</corpus>
+            <title>g016勅建淨慈寺志</title>
+            <book_code>g016</book_code>
+            <geo_longitude>120.144059</geo_longitude>
+            <geo_latitude>30.231169</geo_latitude>
+            <time_dynasty>清</time_dynasty>
+            <year_for_grouping>1805</year_for_grouping>
+            <author>釋際祥</author>
+            <doctype>寺志</doctype>
+            <xml_metadata>
+                <Udef_Title>
+                    <a
+                        href="http://buddhistinformatics.dila.edu.tw/fosizhi/ui.html?book=g016"
+						target="_blank">g016勅建淨慈寺志</a>
+                </Udef_Title>
+                <Udef_Dynasty_Writing>清</Udef_Dynasty_Writing>
+                <Udef_Year_Writing>1805</Udef_Year_Writing>
+                <Udef_Dynasty_Issue>清</Udef_Dynasty_Issue>
+                <Udef_Year_Issue>1888</Udef_Year_Issue>
+                <Udef_Doctype>寺志</Udef_Doctype>
+                <author>
+                    <PersonName RefId="A022520">釋際祥</PersonName>
+                </author>
+                <Geo>4杭州</Geo>
+            </xml_metadata>
+            <timeseq_not_before>0</timeseq_not_before>
+            <timeseq_not_after>0</timeseq_not_after>
+            <docclass>4杭州</docclass>
+            <doc_content>
+                <Paragraph>「至嘉慶中，寺僧際祥乃博考羣籍，另撰新志。書凡二十卷(應為「二十八卷」)，首二卷，末一卷。……此志版片燬於咸豐之季，光緒十四年（一八八八）錢塘丁氏乃為之重刻行世。茲據重刻本景印。」([版本說明]，頁f3)「適主僧際祥脩是志成……書凡二十八卷，分列十二門。」(清安泰〈序〉，頁0005)</Paragraph>
+                <MetaTags NoIndex="0">
+					<Udef_AuthorBackground>僧人</Udef_AuthorBackground>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+
+        <document filename="g017">
+            <corpus>@佛寺志書目</corpus>
+            <title>g017玉岑山慧因高麗華嚴教寺志</title>
+            <book_code>g017</book_code>
+            <geo_longitude>120.12596</geo_longitude>
+            <geo_latitude>30.230367</geo_latitude>
+            <time_dynasty>明</time_dynasty>
+            <year_for_grouping>1627</year_for_grouping>
+            <author>李翥;丁丙</author>
+            <doctype>寺志</doctype>
+            <xml_metadata>
+                <Udef_Title>
+                    <a
+                        href="http://buddhistinformatics.dila.edu.tw/fosizhi/ui.html?book=g017"
+						target="_blank">g017玉岑山慧因高麗華嚴教寺志</a>
+                </Udef_Title>
+                <Udef_Dynasty_Writing>明</Udef_Dynasty_Writing>
+                <Udef_Year_Writing>1627</Udef_Year_Writing>
+                <Udef_Dynasty_Issue>清</Udef_Dynasty_Issue>
+                <Udef_Year_Issue>1881</Udef_Year_Issue>
+                <Udef_Doctype>寺志</Udef_Doctype>
+                <author>
+                    <PersonName RefId="A003575">李翥</PersonName>;<PersonName RefId="A003576">丁丙</PersonName>
+                </author>
+                <Geo>4杭州</Geo>
+            </xml_metadata>
+            <timeseq_not_before>0</timeseq_not_before>
+            <timeseq_not_after>0</timeseq_not_after>
+            <docclass>4杭州</docclass>
+            <doc_content>
+                <Paragraph>「至萬曆、天啟間，傳至止水，寺始復舊觀。止水並乞李翥為編寺志，翥乃據寺中所有之碑碣、記載、文獻及寺中僧侶所記之隨筆，輯為十二卷。……清光緒年間，錢塘丁丙刻《武林掌故叢編》時，得此寺志，乃於光緒七年（一八八一）為之重刻，並自《兩浙金石志》中輯有關本寺之碑文，及《蒲室集》中所收〈歲閱藏經記〉，輯刻為附錄。玆據丁氏重刋本景印。」([版本說明]，頁f3)「乾隆間，吳志上允嘉輯《武林耆舊集》，號稱賅博，均不載一詩。是此志，吳先生亦未嘗寓目。傳本之孤，益可見矣。余願藉志留寺，亟為梓行。且檢阮文達《兩浙金石志》，宋時《蠲免劄付碑》、《劄付碑陰記》、《觀音放光瑞相碑》、《尚書省牒》兩碑。文雖殘闕，究為寺中掌故。又《蒲室集》有《歲閱藏經記》，志亦失採，因附刻於後而記其緣起云。」(丁丙〈後記〉，頁0279 ~ 頁0280)。</Paragraph>
+                <MetaTags NoIndex="0">
+					<Udef_AuthorBackground>文人雅士</Udef_AuthorBackground>
+                </MetaTags>
+            </doc_content>
+        </document>
+
+    </documents>
+</ThdlPrototypeExport>	
+

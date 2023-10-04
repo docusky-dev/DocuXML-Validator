@@ -1,0 +1,20 @@
+<ThdlPrototypeExport>
+	<documents>
+		<document filename="ff">
+			<corpus>
+			</corpus>
+			<doc_content>aaa <name>MY</name>
+			</doc_content>
+		</document>
+		<document filename="ff">
+			<corpus>
+			</corpus>
+			<doc_content>bbb</doc_content>
+		</document>
+		<document filename="a13">
+			<corpus>
+			</corpus>
+			<doc_content>ccc</doc_content>
+		</document>
+	</documents>
+</ThdlPrototypeExport>
