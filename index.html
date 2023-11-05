@@ -38,12 +38,12 @@
 
                     // ThdlPrototypeExport
                     if (tags[0].tagName != 'ThdlPrototypeExport')
-                        alert_and_exit("缺少<ThdlPrototypeExport>或未放在root位置上");
+                        alert("缺少<ThdlPrototypeExport>或未放在root位置上");
 
                     // documents
                     var documents = xmlDoc.querySelectorAll("documents");
                     if (documents.length != 1)
-                        alert_and_exit("<documents>數量必須恰好為1")
+                        alert("<documents>數量必須恰好為1")
                     if (documents[0].parentNode.tagName != "ThdlPrototypeExport")
                         alert("<documents>必須是<ThdlPrototypeExport>的child");
 
@@ -61,9 +61,9 @@
                         // filename
                         filename = tag.attributes["filename"];
                         if (typeof filename === 'undefined')
-                            alert_and_exit("所有<document>都必須有 'filename' 這個 attribute");
+                            alert("所有<document>都必須有 'filename' 這個 attribute");
                         if (filenameSet.has(filename.nodeValue))
-                            alert_and_exit("每個<document>的 'filename' 內容必須唯一");
+                            alert("每個<document>的 'filename' 內容必須唯一");
                         else
                             filenameSet.add(filename.nodeValue);
 
@@ -77,9 +77,9 @@
                                 n_doc_content++;
                         }
                         if (n_corpus != 1)
-                            alert_and_exit("每個<document>都必須恰好有一<corpus>")
+                            alert("每個<document>都必須恰好有一<corpus>")
                         if (n_doc_content != 1)
-                            alert_and_exit("每個<document>都必須恰好有一<doc_content>")
+                            alert("每個<document>都必須恰好有一<doc_content>")
 
                     }
                     alert("目前無檢查到錯誤");
